@@ -365,3 +365,8 @@ header {
   background: #bfa45f;
   color: #122d20;
 }
+/* REMOVE UNWANTED WHITE GAP */
+.hero {
+  margin-top: 0 !important;
+  padding-top: 120px; /* keeps text nicely centered */
+}
