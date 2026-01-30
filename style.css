@@ -230,3 +230,20 @@ footer {
   padding: 14px 34px;
   font-size: 15px;
 }
+/* BRAND FONT */
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* MAIN HEADINGS */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* BODY TEXT */
+body {
+  font-family: 'Inter', sans-serif;
+}
