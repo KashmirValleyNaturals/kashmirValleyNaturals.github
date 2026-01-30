@@ -429,3 +429,21 @@ a:hover, button:hover {
   background: #d8c38a;
   color: #0f2f23;
 }
+/* ===== FINAL HERO FIX ===== */
+.hero {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 0 20px;
+
+  background: linear-gradient(
+    160deg,
+    #0f2f23 0%,
+    #143d2e 55%,
+    #0b241b 100%
+  );
+}
