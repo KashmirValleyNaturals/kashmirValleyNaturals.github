@@ -1,169 +1,56 @@
-/* ====== RESET ====== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ====== ROOT COLORS ====== */
-:root {
-  --dark-green: #143b2c;
-  --deep-green: #0f2f23;
-  --gold: #c9a24d;
-  --cream: #f6f5f2;
-  --muted: #7d8f86;
-}
-
-/* ====== BODY ====== */
-body {
-  font-family: "Playfair Display", serif;
-  background-color: var(--cream);
-  color: #1c1c1c;
-  line-height: 1.8;
-}
-
-/* ====== NAVBAR ====== */
-nav {
-  background: linear-gradient(90deg, var(--deep-green), var(--dark-green));
-  padding: 24px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav h1 {
-  color: white;
-  font-size: 26px;
-  letter-spacing: 1px;
-  font-weight: 500;
-}
-
-nav a {
-  color: #eaeaea;
-  margin-left: 30px;
-  text-decoration: none;
-  font-size: 15px;
-  letter-spacing: 1px;
-  position: relative;
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: var(--gold);
-  transition: 0.3s ease;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-/* ====== HERO ====== */
-.hero {
-  height: 80vh;
-  background: linear-gradient(
-      rgba(15, 47, 35, 0.75),
-      rgba(15, 47, 35, 0.75)
-    ),
-    radial-gradient(circle at top, #1e4d3b, #0f2f23);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-
-.hero h2 {
-  color: white;
-  font-size: 52px;
-  max-width: 800px;
-  font-weight: 500;
-}
-
-.hero p {
-  color: #d8e2dc;
-  margin-top: 20px;
-  font-size: 18px;
-  letter-spacing: 0.5px;
-}
-
-.hero a {
-  margin-top: 35px;
-  padding: 14px 36px;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  text-decoration: none;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  transition: 0.3s ease;
-}
-
-.hero a:hover {
-  background: var(--gold);
-  color: #1c1c1c;
-}
-
-/* ====== SECTION ====== */
-.section {
+.products-section {
   max-width: 900px;
   margin: 100px auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
-.section h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
+.products-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  margin-bottom: 80px;
   text-align: center;
-  font-weight: 500;
 }
 
-.section p {
-  font-size: 17px;
-  color: #333;
+.product-card {
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
-/* ====== LUXURY CARDS ====== */
-.lux-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
-  margin-top: 60px;
+.product-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 14px;
 }
 
-.lux-card {
-  background: white;
-  padding: 40px;
-  border-radius: 6px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
-  transition: transform 0.4s ease;
+.product-card .desc {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 520px;
+  color: #2f2f2f;
 }
 
-.lux-card:hover {
-  transform: translateY(-8px);
-}
-
-.lux-card h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
-  color: var(--deep-green);
-}
-
-.lux-card p {
-  font-size: 15px;
-  color: #555;
-}
-
-/* ====== FOOTER ====== */
-footer {
-  background: var(--deep-green);
-  color: #cfd8d2;
-  text-align: center;
-  padding: 30px;
+.product-card .note {
+  margin-top: 12px;
   font-size: 13px;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.lux-btn {
+  display: inline-block;
+  margin-top: 26px;
+  padding: 12px 34px;
+  border: 1px solid #b89b5e;
+  color: #b89b5e;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.lux-btn:hover {
+  background: #b89b5e;
+  color: #fff;
 }
