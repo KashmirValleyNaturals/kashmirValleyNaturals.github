@@ -260,3 +260,108 @@ h1, h2, h3 {
 body {
   font-family: 'Inter', sans-serif;
 }
+/* ===============================
+   PREMIUM UPGRADE – DO NOT REMOVE
+   =============================== */
+
+/* LUXURY NAVBAR */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(18, 45, 32, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: #f5f5f5;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  transition: opacity 0.3s ease;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
+
+/* PRODUCTS SECTION */
+.products {
+  padding: 60px 20px;
+  background: #f8f6f2;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.note {
+  display: block;
+  margin: 14px 0;
+  font-size: 12px;
+  color: #777;
+  letter-spacing: 0.5px;
+}
+
+/* GOLD BUTTON */
+.lux-btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border: 1px solid #bfa45f;
+  color: #bfa45f;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.lux-btn:hover {
+  background: #bfa45f;
+  color: #122d20;
+}
