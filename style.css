@@ -56,9 +56,14 @@ nav a {
 /* FIX HERO HEADING VISIBILITY */
 .hero h1 {
   opacity: 1 !important;
-  color: #f5e6c8 !important; /* luxury gold */
+  color: #f5e6c8 !important;
   position: relative;
   z-index: 5;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
 }
 
 .hero h1 {
