@@ -370,3 +370,11 @@ header {
   margin-top: 0 !important;
   padding-top: 120px; /* keeps text nicely centered */
 }
+/* GLOBAL SMOOTH FEEL */
+* {
+  transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
