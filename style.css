@@ -53,24 +53,6 @@ nav a {
   font-size: 14px;
 }
 
-/* FIX HERO HEADING VISIBILITY */
-.hero h1 {
-  opacity: 1 !important;
-  color: #f5e6c8 !important;
-  position: relative;
-  z-index: 5;
-}
-
-.hero {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 40px;
-  margin-bottom: 18px;
-}
 
 .hero p {
   max-width: 520px;
@@ -396,4 +378,55 @@ html {
 }
 a:hover, button:hover {
   transform: translateY(-2px);
+}
+/* ===============================
+   PREMIUM HERO – FINAL VERSION
+================================ */
+
+.hero {
+  background: linear-gradient(
+    160deg,
+    #0f2f23 0%,
+    #143d2e 50%,
+    #0b241b 100%
+  );
+  color: #f5e6c8;
+  padding: 140px 24px;
+  text-align: center;
+}
+
+/* HERO HEADING */
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  margin-bottom: 18px;
+  color: #f5e6c8;
+}
+
+/* HERO SUBTEXT */
+.hero p {
+  font-size: 16px;
+  max-width: 520px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* HERO CTA */
+.hero a {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 14px 36px;
+  border: 1px solid #d8c38a;
+  color: #d8c38a;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.hero a:hover {
+  background: #d8c38a;
+  color: #0f2f23;
 }
