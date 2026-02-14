@@ -22,7 +22,7 @@ font-family:'Inter',sans-serif;
 overflow-x:hidden;
 }
 
-/* GOLD COLORS */
+/* GOLD VARIABLES */
 :root{
 --gold:#d4af37;
 --soft-gold:#e6c766;
@@ -37,7 +37,7 @@ align-items:center;
 padding:25px 8%;
 position:sticky;
 top:0;
-background:rgba(4,31,20,0.9);
+background:rgba(4,31,20,0.95);
 backdrop-filter:blur(10px);
 z-index:1000;
 }
@@ -48,7 +48,17 @@ font-size:26px;
 line-height:1.1;
 }
 
-.logo span{ color:var(--gold); }
+.logo span{
+color:var(--gold);
+}
+
+.est{
+font-size:12px;
+letter-spacing:3px;
+margin-top:8px;
+color:rgba(212,175,55,0.7);
+font-family:'Inter',sans-serif;
+}
 
 nav a{
 color:#e9e4db;
@@ -86,7 +96,7 @@ filter:blur(80px);
 
 .hero h1{
 font-family:'Playfair Display',serif;
-font-size:62px;
+font-size:60px;
 line-height:1.2;
 }
 
@@ -105,12 +115,11 @@ padding:80px 8%;
 .product{
 border-top:1px solid rgba(255,255,255,0.06);
 padding:80px 0;
-transition:.6s;
 }
 
 .product h2{
 font-family:'Playfair Display',serif;
-font-size:44px;
+font-size:42px;
 }
 
 .price{
@@ -263,7 +272,7 @@ font-weight:500;
 box-shadow:0 0 25px rgba(212,175,55,0.3);
 }
 
-/* ANIMATION */
+/* FADE ANIMATION */
 
 .fade{
 opacity:0;
@@ -281,7 +290,6 @@ transform:translateY(0);
 @media(max-width:768px){
 
 .hero h1{ font-size:38px; }
-
 .product h2{ font-size:30px; }
 
 header{
@@ -304,6 +312,7 @@ font-size:12px;
 <header>
 <div class="logo">
 Kashmir Valley<br><span>Naturals</span>
+<div class="est">EST. 2025</div>
 </div>
 
 <nav>
@@ -320,8 +329,6 @@ Kashmir Valley<br><span>Naturals</span>
 </section>
 
 <section class="products">
-
-<!-- ALL PRODUCTS -->
 
 <div class="product fade">
 <h2>Kashmiri Saffron (Kesar)</h2>
@@ -405,7 +412,7 @@ Kashmir Valley<br><span>Naturals</span>
 </section>
 
 <footer>
-© 2026 Kashmir Valley Naturals
+© 2025 Kashmir Valley Naturals
 </footer>
 
 <a href="https://wa.me/916006773054" class="floating">WhatsApp Us</a>
