@@ -6,294 +6,151 @@
 <title>Kashmir Valley Naturals</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-html{scroll-behavior:smooth}
-body{
-margin:0;
-background:#072b1f;
-color:#fff;
-font-family:'Inter',sans-serif;
-}
-
-/* HEADER */
-header{
-padding:30px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:1px solid rgba(255,255,255,0.1);
-}
-.logo{
-font-family:'Playfair Display',serif;
-font-size:28px;
-}
-.logo span{
-color:#d4af37;
-}
-.est{
-font-size:12px;
-letter-spacing:2px;
-color:#d4af37;
-margin-top:5px;
-}
-nav a{
-color:#fff;
-margin-left:25px;
-text-decoration:none;
-font-size:14px;
-opacity:.8;
-}
-nav a:hover{opacity:1}
-
-/* HERO */
-.hero{
-padding:120px 8%;
-text-align:center;
-}
-.hero h1{
-font-family:'Playfair Display',serif;
-font-size:48px;
-margin-bottom:20px;
-}
-.hero p{
-color:#d4af37;
-letter-spacing:2px;
-}
-
-/* SECTION */
-section{
-padding:80px 8%;
-}
-h2{
-font-family:'Playfair Display',serif;
-font-size:36px;
-margin-bottom:40px;
-}
-
-/* PRODUCT */
-.product{
-margin-bottom:70px;
-border-bottom:1px solid rgba(255,255,255,0.1);
-padding-bottom:40px;
-}
-.product h3{
-font-family:'Playfair Display',serif;
-font-size:26px;
-}
-.badge{
-background:#d4af37;
-color:#000;
-padding:6px 14px;
-font-size:12px;
-margin-left:15px;
-}
-.stock{
-color:#ff6b6b;
-margin:10px 0;
-}
-.pricing{
-margin:15px 0;
-font-size:20px;
-}
-.pricing .old{
-text-decoration:line-through;
-opacity:.6;
-margin-left:15px;
-}
-button{
-background:transparent;
-border:1px solid #d4af37;
-color:#d4af37;
-padding:12px 30px;
-cursor:pointer;
-transition:.4s;
-}
-button:hover{
-background:#d4af37;
-color:#000;
-box-shadow:0 0 20px rgba(212,175,55,.6);
-}
-
-/* TESTIMONIAL */
-.testimonial{
-margin-bottom:40px;
-border:1px solid rgba(255,255,255,0.1);
-padding:30px;
-}
-
-/* INSTAGRAM */
-.instagram{
-text-align:center;
-}
-.instagram a{
-color:#d4af37;
-text-decoration:none;
-}
-
-/* FOOTER */
-footer{
-padding:40px 8%;
-text-align:center;
-border-top:1px solid rgba(255,255,255,0.1);
-font-size:14px;
-opacity:.7;
-}
-
-/* FLOATING WA */
-.floating-wa{
-position:fixed;
-bottom:30px;
-right:30px;
-background:#d4af37;
-color:#000;
-padding:15px 25px;
-border-radius:40px;
-text-decoration:none;
-font-weight:500;
-}
-
-/* ANIMATION */
-.reveal{
-opacity:0;
-transform:translateY(40px);
-transition:1s;
-}
-.reveal.active{
-opacity:1;
-transform:translateY(0);
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<div>
-<div class="logo">Kashmir Valley <span>Naturals</span></div>
-<div class="est">EST. 2025</div>
-</div>
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#whyus">Why Us</a>
-<a href="#contact">Contact</a>
-</nav>
+  <div class="logo">
+    Kashmir Valley <span>Naturals</span>
+    <div class="est">EST. 2025</div>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="why-us.html">Why Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<section id="home" class="hero reveal">
-<h1>Pure From The Heart of Kashmir</h1>
-<p>Luxury Natural Products • Authentic • Handpicked</p>
+<section class="hero reveal">
+  <h1>Pure From The Heart of Kashmir</h1>
+  <p>Luxury Natural Products • Authentic • Handpicked</p>
 </section>
 
-<section class="reveal">
-<h2>Signature Harvest</h2>
+<!-- SIGNATURE HARVEST -->
+<section class="category reveal">
+  <h2>Signature Harvest</h2>
 
-<div class="product">
-<h3>Kashmiri Saffron (Kesar) <span class="badge">Best Seller</span></h3>
-<div class="stock">Only 7 Left In Stock</div>
-<div class="pricing">₹349 <span class="old">₹399</span></div>
-<button onclick="order('Kashmiri Saffron - ₹349')">Order Now</button>
-</div>
+  <div class="product highlight">
+    <div class="badge">Best Seller</div>
+    <h3>Kashmiri Saffron (Kesar)</h3>
+    <p class="stock">Only 7 Left In Stock</p>
+    <p class="timer">Offer Ends In: <span id="countdown"></span></p>
+    <div class="price">
+      ₹349 <span>₹399</span>
+    </div>
+    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Saffron" class="btn">Order Now</a>
+  </div>
 
-<div class="product">
-<h3>Saffron Oil</h3>
-<div class="pricing">₹799 <span class="old">₹999</span></div>
-<button onclick="order('Saffron Oil - ₹799')">Order Now</button>
-</div>
-
-<div class="product">
-<h3>Walnut (Akhrot)</h3>
-<div class="pricing">₹2,099 <span class="old">₹2,499</span></div>
-<button onclick="order('Walnut - ₹2099')">Order Now</button>
-</div>
-
-<div class="product">
-<h3>Almonds (Badam)</h3>
-<div class="pricing">₹1,699 <span class="old">₹1,899</span></div>
-<button onclick="order('Almonds - ₹1699')">Order Now</button>
-</div>
-
-<div class="product">
-<h3>Almonds With Shell</h3>
-<div class="pricing">₹799 <span class="old">₹899</span></div>
-<button onclick="order('Almonds With Shell - ₹799')">Order Now</button>
-</div>
-
-<div class="product">
-<h3>Shilajit</h3>
-<div class="pricing">₹749 <span class="old">₹999</span></div>
-<button onclick="order('Shilajit - ₹749')">Order Now</button>
-</div>
-
-<div class="product">
-<h3>Kehwa</h3>
-<div class="pricing">₹349 <span class="old">₹399</span></div>
-<button onclick="order('Kehwa - ₹349')">Order Now</button>
-</div>
-
-<div class="product">
-<h3>Honey</h3>
-<div class="pricing">₹799 <span class="old">₹899</span></div>
-<button onclick="order('Honey - ₹799')">Order Now</button>
-</div>
-
-<div class="product">
-<h3>Kashmiri Delight Gift Hamper</h3>
-<div class="pricing">₹1,499 <span class="old">₹1,699</span></div>
-<button onclick="order('Gift Hamper - ₹1499')">Order Now</button>
-</div>
-
+  <div class="product">
+    <h3>Saffron Oil</h3>
+    <div class="price">
+      ₹799 <span>₹999</span>
+    </div>
+    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Saffron%20Oil" class="btn">Order Now</a>
+  </div>
 </section>
 
-<section id="whyus" class="reveal">
-<h2>What Our Customers Say</h2>
+<!-- PREMIUM DRY FRUITS -->
+<section class="category reveal">
+  <h2>Premium Dry Fruits</h2>
 
-<div class="testimonial">
-★★★★★  
-<br><br>
-"Premium quality saffron. Truly authentic."  
-<br><br>
-— Aarav, Delhi
-</div>
+  <div class="product">
+    <h3>Walnut (Akhrot)</h3>
+    <div class="price">
+      ₹2,099 <span>₹2,499</span>
+    </div>
+    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Walnut" class="btn">Order Now</a>
+  </div>
 
-<div class="testimonial">
-★★★★★  
-<br><br>
-"Excellent packaging and fast delivery."  
-<br><br>
-— Zoya, Mumbai
-</div>
+  <div class="product">
+    <h3>Almonds (Badam)</h3>
+    <div class="price">
+      ₹1,699 <span>₹1,899</span>
+    </div>
+    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Almonds" class="btn">Order Now</a>
+  </div>
 
+  <div class="product">
+    <h3>Almonds With Shell</h3>
+    <div class="price">
+      ₹799 <span>₹899</span>
+    </div>
+    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Almonds%20With%20Shell" class="btn">Order Now</a>
+  </div>
 </section>
 
-<section id="contact" class="instagram reveal">
-<h2>Follow Our Journey</h2>
-<p>@kashmirvalleynaturals</p>
-<a href="https://instagram.com/kashmirvalleynaturals" target="_blank">
-<button>Visit Instagram</button>
-</a>
+<!-- WELLNESS & GIFTS -->
+<section class="category reveal">
+  <h2>Wellness & Gifts</h2>
+
+  <div class="product">
+    <h3>Shilajit</h3>
+    <div class="price">
+      ₹749 <span>₹999</span>
+    </div>
+    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Shilajit" class="btn">Order Now</a>
+  </div>
+
+  <div class="product">
+    <h3>Kehwa</h3>
+    <div class="price">
+      ₹349 <span>₹399</span>
+    </div>
+    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Kehwa" class="btn">Order Now</a>
+  </div>
+
+  <div class="product">
+    <h3>Honey</h3>
+    <div class="price">
+      ₹799 <span>₹899</span>
+    </div>
+    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Honey" class="btn">Order Now</a>
+  </div>
+
+  <div class="product">
+    <h3>Kashmiri Delight Gift Hamper</h3>
+    <div class="price">
+      ₹1,499 <span>₹1,699</span>
+    </div>
+    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Gift%20Hamper" class="btn">Order Now</a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials reveal">
+  <h2>Customer Reviews</h2>
+
+  <div class="review">
+    ⭐⭐⭐⭐⭐
+    <p>"Premium quality saffron. Truly authentic."</p>
+    <span>— Aarav, Delhi</span>
+  </div>
+
+  <div class="review">
+    ⭐⭐⭐⭐⭐
+    <p>"Excellent packaging and fast delivery."</p>
+    <span>— Zoya, Mumbai</span>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="instagram reveal">
+  <h2>Follow Our Journey</h2>
+  <p>@kashmirvalleynaturals</p>
+  <a href="https://instagram.com/kashmirvalleynaturals" class="btn">Visit Instagram</a>
 </section>
 
 <footer>
-© 2025 Kashmir Valley Naturals
+  © 2026 Kashmir Valley Naturals
 </footer>
 
 <a href="https://wa.me/916006773054" class="floating-wa">WhatsApp Us</a>
 
-<script>
-function order(product){
-window.open("https://wa.me/916006773054?text=I want to order: "+product);
-}
-
-window.addEventListener('scroll',()=>{
-document.querySelectorAll('.reveal').forEach(el=>{
-if(el.getBoundingClientRect().top < window.innerHeight-100){
-el.classList.add('active');
-}
-});
-});
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
