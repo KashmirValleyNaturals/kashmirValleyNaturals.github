@@ -7,6 +7,19 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<script>
+window.addEventListener("scroll", function(){
+  document.querySelectorAll(".reveal").forEach(function(el){
+    let top = el.getBoundingClientRect().top;
+    let windowHeight = window.innerHeight;
+    if(top < windowHeight - 100){
+      el.classList.add("active");
+    }
+  });
+});
+</script>
+
 </head>
 
 <body>
@@ -14,150 +27,78 @@
 <header class="navbar">
   <div class="logo">Kashmir Valley <span>Naturals</span></div>
   <nav class="nav-links">
-    <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="why-us.html">Why Us</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Pure From The<br>Heart of Kashmir</h1>
-  <p>Luxury Natural Products · Authentic · Handpicked</p>
-  <p class="limited">Limited Seasonal Harvest • Free Delivery Across India</p>
+<section class="hero reveal">
+  <h1>Luxury From The<br>Mountains of Kashmir</h1>
+  <p>Rare • Authentic • Limited Harvest</p>
+  <p class="limited">Free Delivery Across India</p>
 </section>
 
-<section class="manifesto">
-  <h2>Our Philosophy</h2>
+<section class="manifesto reveal">
+  <h2>Crafted With Intention</h2>
   <p>
-    Kashmir Valley Naturals is not just a brand.
-    It is a commitment to purity, heritage and uncompromising quality.
-  </p>
-  <p>
-    Every harvest is limited. Every product is intentional.
-    Luxury should always be authentic.
+    We source directly from Kashmiri farmers to preserve purity and heritage.
+    Every product reflects authenticity and luxury.
   </p>
 </section>
 
-<section class="products">
+<section class="products reveal">
 
   <div class="product">
-    <h2>Walnut (Akhrot)</h2>
-    <div class="pricing">
-      <span class="new">₹2,099</span>
-      <span class="old">₹2,499</span>
-    </div>
-    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Walnut%20(Akhrot)%20-%20₹2,099.%20My%20delivery%20address%20is:" class="btn">Order via WhatsApp</a>
-  </div>
-
-  <div class="product">
-    <h2>Shilajit</h2>
-    <div class="pricing">
-      <span class="new">₹749</span>
-      <span class="old">₹999</span>
-    </div>
-    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Shilajit%20-%20₹749.%20My%20delivery%20address%20is:" class="btn">Order via WhatsApp</a>
-  </div>
-
-  <div class="product">
-    <h2>Almonds (Badam)</h2>
-    <div class="pricing">
-      <span class="new">₹1,699</span>
-      <span class="old">₹1,899</span>
-    </div>
-    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Almonds%20(Badam)%20-%20₹1,699.%20My%20delivery%20address%20is:" class="btn">Order via WhatsApp</a>
-  </div>
-
-  <div class="product">
-    <h2>Kashmiri Saffron (Kesar)</h2>
+    <h2>Kashmiri Saffron</h2>
+    <p>Handpicked premium strands with deep aroma.</p>
     <div class="pricing">
       <span class="new">₹349</span>
       <span class="old">₹399</span>
     </div>
-    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Kashmiri%20Saffron%20-%20₹349.%20My%20delivery%20address%20is:" class="btn">Order via WhatsApp</a>
-  </div>
-
-  <div class="product">
-    <h2>Saffron Oil</h2>
-    <div class="pricing">
-      <span class="new">₹799</span>
-      <span class="old">₹999</span>
-    </div>
-    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Saffron%20Oil%20-%20₹799.%20My%20delivery%20address%20is:" class="btn">Order via WhatsApp</a>
-  </div>
-
-  <div class="product">
-    <h2>Almonds with Shell</h2>
-    <div class="pricing">
-      <span class="new">₹799</span>
-      <span class="old">₹899</span>
-    </div>
-    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Almonds%20with%20Shell%20-%20₹799.%20My%20delivery%20address%20is:" class="btn">Order via WhatsApp</a>
-  </div>
-
-  <div class="product">
-    <h2>Kashmiri Delight Gift Hamper</h2>
-    <div class="pricing">
-      <span class="new">₹1,499</span>
-      <span class="old">₹1,699</span>
-    </div>
-    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Gift%20Hamper%20-%20₹1,499.%20My%20delivery%20address%20is:" class="btn">Order via WhatsApp</a>
-  </div>
-
-  <div class="product">
-    <h2>Kehwa</h2>
-    <div class="pricing">
-      <span class="new">₹349</span>
-      <span class="old">₹399</span>
-    </div>
-    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Kehwa%20-%20₹349.%20My%20delivery%20address%20is:" class="btn">Order via WhatsApp</a>
-  </div>
-
-  <div class="product">
-    <h2>Honey</h2>
-    <div class="pricing">
-      <span class="new">₹799</span>
-      <span class="old">₹899</span>
-    </div>
-    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Honey%20-%20₹799.%20My%20delivery%20address%20is:" class="btn">Order via WhatsApp</a>
+    <a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Kashmiri%20Saffron%20-%20₹349" class="btn">Order Now</a>
   </div>
 
 </section>
 
-<section class="trust">
-  <div class="trust-box">✔ 100% Authentic Kashmiri Sourcing</div>
-  <div class="trust-box">✔ Limited Seasonal Harvest</div>
-  <div class="trust-box">✔ Direct WhatsApp Support</div>
-  <div class="trust-box">✔ Secure & Safe Delivery</div>
-</section>
+<section class="testimonials reveal">
+  <h2>What Clients Say</h2>
 
-<section class="testimonials">
-  <h2>What Our Customers Say</h2>
-
-  <div class="testimonial">
-    <p>"The saffron quality is unmatched. Truly premium."</p>
-    <span>— Delhi</span>
-  </div>
-
-  <div class="testimonial">
-    <p>"Fast delivery and authentic taste. Highly recommended."</p>
-    <span>— Mumbai</span>
+  <div class="testimonial-slider">
+    <div class="testimonial-slide active-slide">
+      "Best saffron I’ve ever purchased."
+      <span>— Delhi</span>
+    </div>
+    <div class="testimonial-slide">
+      "Premium packaging and fast delivery."
+      <span>— Mumbai</span>
+    </div>
   </div>
 </section>
 
-<section class="instagram">
-  <h2>Follow Our Journey</h2>
-  <p>@kashmirvalleynaturals</p>
-  <a href="https://instagram.com/kashmirvalleynaturals" target="_blank" class="btn">Visit Instagram</a>
+<section class="email-capture reveal">
+  <h2>Stay Connected</h2>
+  <p>Get exclusive offers & seasonal updates.</p>
+  <input type="email" placeholder="Enter your email">
+  <button>Subscribe</button>
 </section>
 
 <footer>
   © 2026 Kashmir Valley Naturals
 </footer>
 
-<a href="https://wa.me/916006773054" class="floating-wa" target="_blank">
-  WhatsApp Us
-</a>
+<a href="https://wa.me/916006773054" class="floating-wa">WhatsApp Us</a>
+
+<script>
+let slides = document.querySelectorAll(".testimonial-slide");
+let index = 0;
+
+setInterval(()=>{
+  slides[index].classList.remove("active-slide");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active-slide");
+}, 3000);
+</script>
 
 </body>
 </html>
