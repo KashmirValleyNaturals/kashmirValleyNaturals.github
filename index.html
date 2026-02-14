@@ -8,23 +8,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+
 body{
 margin:0;
 background:#052c1a;
 color:#f5f2e9;
 font-family:'Inter',sans-serif;
+overflow-x:hidden;
 }
 
 h1,h2,h3{
 font-family:'Playfair Display',serif;
 }
 
+/* NAVBAR */
 .navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 8%;
 border-bottom:1px solid rgba(255,255,255,0.1);
+position:sticky;
+top:0;
+background:rgba(5,44,26,0.95);
+backdrop-filter:blur(6px);
+z-index:1000;
 }
 
 .logo span{color:#d4af37;}
@@ -38,6 +46,7 @@ transition:0.3s;
 }
 nav a:hover{color:#d4af37;}
 
+/* HERO */
 .hero{
 text-align:center;
 padding:100px 20px;
@@ -45,6 +54,7 @@ padding:100px 20px;
 .hero h1{font-size:48px;}
 .hero p{color:#d4af37;}
 
+/* CATEGORY */
 .category{
 padding:70px 8%;
 }
@@ -54,15 +64,16 @@ padding-bottom:10px;
 margin-bottom:40px;
 }
 
+/* PRODUCT */
 .product{
 margin-bottom:50px;
 padding:25px;
 border:1px solid rgba(255,255,255,0.08);
-transition:0.4s;
+transition:all 0.4s ease;
 }
 .product:hover{
 box-shadow:0 0 25px rgba(212,175,55,0.3);
-transform:translateY(-5px);
+transform:translateY(-6px);
 }
 
 .badge{
@@ -94,7 +105,7 @@ color:#052c1a;
 box-shadow:0 0 20px #d4af37;
 }
 
-/* Testimonials */
+/* TESTIMONIALS */
 .testimonials{
 padding:80px 8%;
 background:#06361f;
@@ -106,19 +117,20 @@ margin-bottom:30px;
 }
 .review span{color:#d4af37;}
 
-/* Instagram */
+/* INSTAGRAM */
 .instagram{
 padding:80px 8%;
 text-align:center;
 }
-.instagram h2{margin-bottom:15px;}
 
+/* FOOTER */
 footer{
 text-align:center;
 padding:40px;
 border-top:1px solid rgba(255,255,255,0.1);
 }
 
+/* FLOATING WA */
 .floating-wa{
 position:fixed;
 bottom:20px;
@@ -129,7 +141,25 @@ padding:14px 24px;
 border-radius:30px;
 text-decoration:none;
 box-shadow:0 0 25px rgba(212,175,55,0.6);
+animation:glow 2s infinite alternate;
 }
+
+@keyframes glow{
+from{box-shadow:0 0 10px #d4af37;}
+to{box-shadow:0 0 30px #d4af37;}
+}
+
+/* SCROLL REVEAL ANIMATION */
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:all 1s ease;
+}
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
 </style>
 </head>
 
@@ -148,12 +178,12 @@ box-shadow:0 0 25px rgba(212,175,55,0.6);
 </nav>
 </header>
 
-<section class="hero">
+<section class="hero reveal">
 <h1>Pure From The Heart Of Kashmir</h1>
 <p>Luxury Natural Products • Authentic • Handpicked</p>
 </section>
 
-<section class="category">
+<section class="category reveal">
 <h2>Signature Harvest</h2>
 
 <div class="product">
@@ -178,7 +208,7 @@ box-shadow:0 0 25px rgba(212,175,55,0.6);
 
 </section>
 
-<section class="category">
+<section class="category reveal">
 <h2>Premium Dry Fruits</h2>
 
 <div class="product">
@@ -201,7 +231,7 @@ box-shadow:0 0 25px rgba(212,175,55,0.6);
 
 </section>
 
-<section class="category">
+<section class="category reveal">
 <h2>Wellness & Essentials</h2>
 
 <div class="product">
@@ -230,8 +260,7 @@ box-shadow:0 0 25px rgba(212,175,55,0.6);
 
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials">
+<section class="testimonials reveal">
 <h2>Customer Reviews</h2>
 
 <div class="review">
@@ -248,8 +277,7 @@ box-shadow:0 0 25px rgba(212,175,55,0.6);
 
 </section>
 
-<!-- INSTAGRAM -->
-<section class="instagram">
+<section class="instagram reveal">
 <h2>Follow Our Journey</h2>
 <p>@kashmirvalleynaturals</p>
 <a href="https://instagram.com/kashmirvalleynaturals" class="btn">Visit Instagram</a>
@@ -260,6 +288,19 @@ box-shadow:0 0 25px rgba(212,175,55,0.6);
 </footer>
 
 <a href="https://wa.me/916006773054" class="floating-wa">WhatsApp Us</a>
+
+<script>
+window.addEventListener('scroll', function() {
+const reveals = document.querySelectorAll('.reveal');
+for (let i = 0; i < reveals.length; i++) {
+let windowHeight = window.innerHeight;
+let elementTop = reveals[i].getBoundingClientRect().top;
+if (elementTop < windowHeight - 100) {
+reveals[i].classList.add('active');
+}
+}
+});
+</script>
 
 </body>
 </html>
