@@ -11,216 +11,299 @@
 
 body{
     margin:0;
-    background:#061f16;
-    color:#f5f5f5;
+    background:#062b1c;
+    color:#e8e3d9;
     font-family:'Inter',sans-serif;
 }
 
-h1,h2,h3{
-    font-family:'Playfair Display',serif;
-    font-weight:700;
-}
-
-.container{
-    width:90%;
-    max-width:1100px;
-    margin:auto;
-}
+/* NAV */
 
 header{
-    padding:25px 0;
-    text-align:center;
-    font-size:26px;
-    letter-spacing:1px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 8%;
 }
 
+.logo{
+    font-family:'Playfair Display',serif;
+    font-size:28px;
+    line-height:1.1;
+}
+
+.logo span{
+    color:#d4af37;
+}
+
+nav a{
+    color:#e8e3d9;
+    text-decoration:none;
+    margin-left:35px;
+    font-size:14px;
+    letter-spacing:1px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+/* HERO */
+
 .hero{
+    padding:100px 8%;
     text-align:center;
-    padding:80px 0;
 }
 
 .hero h1{
-    font-size:42px;
-    line-height:1.3;
+    font-family:'Playfair Display',serif;
+    font-size:60px;
+    line-height:1.2;
+    margin:0;
 }
 
 .hero p{
-    color:#caa857;
-    margin-top:20px;
-    font-size:16px;
+    margin-top:25px;
+    color:#d4af37;
+    letter-spacing:2px;
 }
 
-.section{
-    padding:60px 0;
+/* PRODUCTS */
+
+.products{
+    padding:60px 8%;
 }
 
 .product{
-    margin-bottom:60px;
-    border-bottom:1px solid rgba(255,255,255,0.08);
-    padding-bottom:40px;
+    border-top:1px solid rgba(255,255,255,0.1);
+    padding:60px 0;
+}
+
+.product h2{
+    font-family:'Playfair Display',serif;
+    font-size:40px;
 }
 
 .price{
-    font-size:24px;
-    color:#caa857;
-    margin:10px 0;
+    font-size:28px;
+    color:#d4af37;
+    margin-top:10px;
 }
 
 .old{
     text-decoration:line-through;
-    color:rgba(255,255,255,0.4);
+    color:#888;
     margin-left:15px;
-    font-size:18px;
+    font-size:20px;
 }
 
-.wa-product-btn{
+.btn{
     display:inline-block;
-    padding:14px 28px;
-    border:1px solid #caa857;
-    color:#caa857;
+    margin-top:25px;
+    padding:14px 40px;
+    border:1px solid #d4af37;
+    color:#d4af37;
     text-decoration:none;
-    margin-top:15px;
-    transition:0.3s ease;
+    letter-spacing:2px;
+    transition:.3s;
 }
 
-.wa-product-btn:hover{
-    background:#caa857;
-    color:#061f16;
+.btn:hover{
+    background:#d4af37;
+    color:#062b1c;
 }
+
+/* TESTIMONIALS */
+
+.testimonials{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.testimonials h2{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    margin-bottom:60px;
+}
+
+.review{
+    border:1px solid rgba(255,255,255,0.1);
+    padding:40px;
+    margin-bottom:40px;
+}
+
+.stars{
+    color:#d4af37;
+    font-size:22px;
+}
+
+.review p{
+    font-style:italic;
+    margin:20px 0;
+}
+
+.buyer{
+    margin-top:15px;
+    color:#aaa;
+}
+
+.verified{
+    display:inline-block;
+    margin-top:15px;
+    padding:6px 15px;
+    background:#d4af37;
+    color:#062b1c;
+    font-size:12px;
+}
+
+/* INSTAGRAM */
 
 .instagram{
+    padding:100px 8%;
     text-align:center;
-    padding:80px 0;
 }
 
 .instagram h2{
-    font-size:32px;
+    font-family:'Playfair Display',serif;
+    font-size:42px;
 }
 
-.instagram a{
-    display:inline-block;
+.instagram p{
+    color:#aaa;
     margin-top:20px;
-    padding:14px 30px;
-    background:#caa857;
-    color:#061f16;
+}
+
+.ig-btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:14px 40px;
+    background:#d4af37;
+    color:#062b1c;
     text-decoration:none;
 }
 
+/* FOOTER */
+
 footer{
     text-align:center;
-    padding:30px 0;
-    color:rgba(255,255,255,0.5);
+    padding:60px 0;
+    color:#777;
 }
 
-/* Floating WhatsApp */
-.floating-wa{
+/* FLOATING WHATSAPP */
+
+.floating{
     position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#caa857;
-    color:#061f16;
-    padding:14px 25px;
-    border-radius:50px;
+    bottom:25px;
+    right:25px;
+    background:linear-gradient(135deg,#d4af37,#f1d58a);
+    color:#062b1c;
+    padding:15px 30px;
+    border-radius:40px;
     text-decoration:none;
     font-weight:500;
 }
 
-/* Animation */
-.reveal{
+/* FADE */
+
+.fade{
     opacity:0;
-    transform:translateY(40px);
-    transition:all 0.8s ease;
+    transform:translateY(30px);
+    transition:1s;
 }
 
-.reveal.active{
+.fade.show{
     opacity:1;
     transform:translateY(0);
 }
 
 </style>
 </head>
+
 <body>
 
-<header class="container">
-Kashmir Valley Naturals
+<header>
+<div class="logo">
+Kashmir Valley<br><span>Naturals</span>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="about.html">About</a>
+<a href="why-us.html">Why Us</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
 
-<section class="hero reveal container">
-<h1>Pure From The Heart of Kashmir</h1>
+
+<section class="hero fade">
+<h1>Pure From The<br>Heart of Kashmir</h1>
 <p>Luxury Natural Products • Authentic • Handpicked</p>
 </section>
 
-<section class="section container">
 
-<div class="product reveal">
-<h3>Walnut (Akhrot)</h3>
+<section class="products">
+
+<div class="product fade">
+<h2>Walnut (Akhrot)</h2>
 <div class="price">₹2,099 <span class="old">₹2,499</span></div>
-<a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Walnut%20for%20₹2099"
-class="wa-product-btn" target="_blank">
-Order via WhatsApp
-</a>
+<a href="https://wa.me/916006773054?text=I want to order Walnut" class="btn">Order Now</a>
 </div>
 
-<div class="product reveal">
-<h3>Almonds (Badam)</h3>
-<div class="price">₹1,699 <span class="old">₹1,899</span></div>
-<a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Almonds%20for%20₹1699"
-class="wa-product-btn" target="_blank">
-Order via WhatsApp
-</a>
-</div>
-
-<div class="product reveal">
-<h3>Kehwa</h3>
-<div class="price">₹349 <span class="old">₹399</span></div>
-<a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Kehwa%20for%20₹349"
-class="wa-product-btn" target="_blank">
-Order via WhatsApp
-</a>
-</div>
-
-<div class="product reveal">
-<h3>Honey</h3>
+<div class="product fade">
+<h2>Honey</h2>
 <div class="price">₹799 <span class="old">₹899</span></div>
-<a href="https://wa.me/916006773054?text=I%20want%20to%20order%20Honey%20for%20₹799"
-class="wa-product-btn" target="_blank">
-Order via WhatsApp
-</a>
+<a href="https://wa.me/916006773054?text=I want to order Honey" class="btn">Order Now</a>
 </div>
 
 </section>
 
-<section class="instagram reveal">
-<h2>Follow Our Journey</h2>
-<p>@kashmirvalleynaturals</p>
-<a href="https://instagram.com/kashmirvalleynaturals" target="_blank">
-Visit Instagram
-</a>
+
+<section class="testimonials fade">
+<h2>What Our Customers Say</h2>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>"Premium quality saffron. Truly authentic."</p>
+<div class="buyer">— Aarav, Delhi</div>
+<div class="verified">Verified Buyer</div>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>"Excellent packaging and fast delivery."</p>
+<div class="buyer">— Zoya, Mumbai</div>
+<div class="verified">Verified Buyer</div>
+</div>
+
 </section>
+
+
+<section class="instagram fade">
+<h2>Experience The Brand Beyond The Website</h2>
+<p>@kashmirvalleynaturals</p>
+<a href="https://instagram.com/kashmirvalleynaturals" class="ig-btn">Visit Instagram</a>
+</section>
+
 
 <footer>
 © 2026 Kashmir Valley Naturals
 </footer>
 
-<a href="https://wa.me/916006773054"
-class="floating-wa"
-target="_blank">
-WhatsApp Us
-</a>
+<a href="https://wa.me/916006773054" class="floating">WhatsApp Us</a>
+
 
 <script>
-const reveals = document.querySelectorAll(".reveal");
+const observer = new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+},{threshold:0.2});
 
-window.addEventListener("scroll", () => {
-    reveals.forEach(el => {
-        const windowHeight = window.innerHeight;
-        const elementTop = el.getBoundingClientRect().top;
-        const visible = 100;
-
-        if(elementTop < windowHeight - visible){
-            el.classList.add("active");
-        }
-    });
+document.querySelectorAll('.fade').forEach(el=>{
+observer.observe(el);
 });
 </script>
 
