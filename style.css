@@ -380,3 +380,41 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+.page-hero {
+  text-align: center;
+  padding: 120px 20px 60px;
+}
+
+.page-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+}
+
+.gold-line {
+  width: 60px;
+  height: 2px;
+  background: #c6a85b;
+  margin: 20px auto 0;
+}
+
+.page-content {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 20px 120px;
+  line-height: 1.9;
+  color: #ddd;
+}
+
+.heritage-text {
+  font-size: 18px;
+  color: #c6a85b;
+  margin-bottom: 30px;
+}
+
+.why-block {
+  margin-bottom: 40px;
+}
+
+.contact-content p {
+  margin-bottom: 15px;
+}
