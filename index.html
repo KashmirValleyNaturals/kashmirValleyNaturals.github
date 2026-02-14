@@ -3,380 +3,275 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Kashmir Valley Naturals | Premium Kashmiri Products</title>
-<meta name="description" content="Authentic Kashmiri saffron, dry fruits, shilajit, honey & premium gift hampers. Luxury natural products directly from Kashmir.">
+<title>Kashmir Valley Naturals</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-
-:root{
---gold:#d4af37;
---soft:#e6c766;
-}
-
+html{scroll-behavior:smooth}
 body{
-background:#041f14;
-color:#e9e4db;
+margin:0;
+background:#072b1f;
+color:#fff;
 font-family:'Inter',sans-serif;
-overflow-x:hidden;
 }
 
 /* HEADER */
 header{
+padding:30px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:30px 8%;
-position:fixed;
-top:0;
-width:100%;
-background:rgba(4,31,20,0.95);
-backdrop-filter:blur(8px);
-transition:.4s;
-z-index:1000;
+border-bottom:1px solid rgba(255,255,255,0.1);
 }
-
-header.shrink{
-padding:15px 8%;
-}
-
 .logo{
 font-family:'Playfair Display',serif;
-font-size:24px;
-line-height:1.1;
+font-size:28px;
 }
-
-.logo span{color:var(--gold);}
-
+.logo span{
+color:#d4af37;
+}
 .est{
-font-size:11px;
-letter-spacing:3px;
-margin-top:6px;
-color:rgba(212,175,55,0.7);
+font-size:12px;
+letter-spacing:2px;
+color:#d4af37;
+margin-top:5px;
 }
-
 nav a{
-color:#e9e4db;
-text-decoration:none;
+color:#fff;
 margin-left:25px;
-font-size:13px;
-letter-spacing:1px;
-transition:.3s;
+text-decoration:none;
+font-size:14px;
+opacity:.8;
 }
-
-nav a:hover{color:var(--gold);}
+nav a:hover{opacity:1}
 
 /* HERO */
 .hero{
-padding:180px 8% 120px;
+padding:120px 8%;
 text-align:center;
 }
-
 .hero h1{
 font-family:'Playfair Display',serif;
-font-size:58px;
-line-height:1.2;
+font-size:48px;
+margin-bottom:20px;
 }
-
 .hero p{
-margin-top:25px;
-color:var(--soft);
+color:#d4af37;
 letter-spacing:2px;
 }
 
-/* CATEGORY */
-.category{
-padding:100px 8% 40px;
+/* SECTION */
+section{
+padding:80px 8%;
 }
-
-.category h2{
+h2{
 font-family:'Playfair Display',serif;
-font-size:40px;
-margin-bottom:50px;
-border-bottom:1px solid rgba(255,255,255,0.08);
-padding-bottom:20px;
+font-size:36px;
+margin-bottom:40px;
 }
 
 /* PRODUCT */
 .product{
-padding:60px 0;
-border-bottom:1px solid rgba(255,255,255,0.05);
-transition:.4s ease;
+margin-bottom:70px;
+border-bottom:1px solid rgba(255,255,255,0.1);
+padding-bottom:40px;
 }
-
-.product:hover{
-background:rgba(255,255,255,0.02);
-box-shadow:0 0 40px rgba(212,175,55,0.15);
-transform:translateY(-5px);
-}
-
 .product h3{
 font-family:'Playfair Display',serif;
-font-size:30px;
+font-size:26px;
 }
-
 .badge{
-display:inline-block;
-background:var(--gold);
-color:#041f14;
-font-size:11px;
-padding:6px 12px;
-margin-left:12px;
-letter-spacing:1px;
+background:#d4af37;
+color:#000;
+padding:6px 14px;
+font-size:12px;
+margin-left:15px;
 }
-
 .stock{
-margin-top:10px;
 color:#ff6b6b;
-font-size:13px;
-animation:pulseStock 2s infinite;
+margin:10px 0;
 }
-
-@keyframes pulseStock{
-0%{opacity:.6;}
-50%{opacity:1;}
-100%{opacity:.6;}
+.pricing{
+margin:15px 0;
+font-size:20px;
 }
-
-.timer{
-margin-top:8px;
-font-size:13px;
-color:var(--soft);
-}
-
-.price{
-margin-top:15px;
-font-size:22px;
-color:var(--gold);
-}
-
-.old{
+.pricing .old{
 text-decoration:line-through;
-color:#666;
-margin-left:10px;
-font-size:16px;
+opacity:.6;
+margin-left:15px;
+}
+button{
+background:transparent;
+border:1px solid #d4af37;
+color:#d4af37;
+padding:12px 30px;
+cursor:pointer;
+transition:.4s;
+}
+button:hover{
+background:#d4af37;
+color:#000;
+box-shadow:0 0 20px rgba(212,175,55,.6);
 }
 
-/* BUTTON */
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 35px;
-border:1px solid var(--gold);
-color:var(--gold);
-text-decoration:none;
-letter-spacing:2px;
-transition:.3s;
+/* TESTIMONIAL */
+.testimonial{
+margin-bottom:40px;
+border:1px solid rgba(255,255,255,0.1);
+padding:30px;
 }
-
-.btn:hover{
-background:var(--gold);
-color:#041f14;
-box-shadow:0 0 20px var(--gold);
-}
-
-/* TESTIMONIALS */
-.testimonials{
-padding:140px 8%;
-text-align:center;
-}
-
-.testimonials h2{
-font-family:'Playfair Display',serif;
-font-size:38px;
-margin-bottom:50px;
-}
-
-.review{
-border:1px solid rgba(255,255,255,0.08);
-padding:35px;
-margin-bottom:25px;
-}
-
-.stars{color:var(--gold);}
-
-.buyer{margin-top:15px;color:#aaa;}
 
 /* INSTAGRAM */
 .instagram{
-padding:120px 8%;
 text-align:center;
 }
-
-.instagram h2{
-font-family:'Playfair Display',serif;
-font-size:38px;
-}
-
-.ig-btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 35px;
-background:var(--gold);
-color:#041f14;
+.instagram a{
+color:#d4af37;
 text-decoration:none;
 }
 
 /* FOOTER */
 footer{
+padding:40px 8%;
 text-align:center;
-padding:60px 0;
-color:#777;
+border-top:1px solid rgba(255,255,255,0.1);
+font-size:14px;
+opacity:.7;
 }
 
 /* FLOATING WA */
-.floating{
+.floating-wa{
 position:fixed;
-bottom:25px;
-right:25px;
-background:linear-gradient(135deg,var(--gold),var(--soft));
-color:#041f14;
-padding:12px 28px;
+bottom:30px;
+right:30px;
+background:#d4af37;
+color:#000;
+padding:15px 25px;
 border-radius:40px;
 text-decoration:none;
+font-weight:500;
 }
 
-/* SCROLL ANIMATION */
+/* ANIMATION */
 .reveal{
 opacity:0;
-transform:translateY(60px);
-transition:1.2s ease;
+transform:translateY(40px);
+transition:1s;
 }
-
 .reveal.active{
 opacity:1;
 transform:translateY(0);
-}
-
-@media(max-width:768px){
-.hero h1{font-size:34px;}
-.product h3{font-size:22px;}
-header{flex-direction:column;gap:10px;}
 }
 </style>
 </head>
 
 <body>
 
-<header id="navbar">
-<div class="logo">
-Kashmir Valley<br><span>Naturals</span>
+<header>
+<div>
+<div class="logo">Kashmir Valley <span>Naturals</span></div>
 <div class="est">EST. 2025</div>
 </div>
 <nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Why Us</a>
-<a href="#">Contact</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#whyus">Why Us</a>
+<a href="#contact">Contact</a>
 </nav>
 </header>
 
-<section class="hero reveal">
-<h1>Pure From The<br>Heart of Kashmir</h1>
+<section id="home" class="hero reveal">
+<h1>Pure From The Heart of Kashmir</h1>
 <p>Luxury Natural Products • Authentic • Handpicked</p>
 </section>
 
-<!-- SIGNATURE HARVEST -->
-<section class="category reveal">
+<section class="reveal">
 <h2>Signature Harvest</h2>
 
 <div class="product">
 <h3>Kashmiri Saffron (Kesar) <span class="badge">Best Seller</span></h3>
-<div class="stock">Only <span id="stock-count">9</span> Left In Stock</div>
-<div class="timer">Offer Ends In: <span id="countdown"></span></div>
-<div class="price">₹349 <span class="old">₹399</span></div>
-<a href="https://wa.me/916006773054?text=I want to order Kashmiri Saffron" class="btn">Order Now</a>
+<div class="stock">Only 7 Left In Stock</div>
+<div class="pricing">₹349 <span class="old">₹399</span></div>
+<button onclick="order('Kashmiri Saffron - ₹349')">Order Now</button>
 </div>
 
 <div class="product">
 <h3>Saffron Oil</h3>
-<div class="price">₹799 <span class="old">₹999</span></div>
-<a href="https://wa.me/916006773054?text=I want to order Saffron Oil" class="btn">Order Now</a>
+<div class="pricing">₹799 <span class="old">₹999</span></div>
+<button onclick="order('Saffron Oil - ₹799')">Order Now</button>
 </div>
-
-</section>
-
-<!-- PREMIUM DRY FRUITS -->
-<section class="category reveal">
-<h2>Premium Dry Fruits</h2>
 
 <div class="product">
 <h3>Walnut (Akhrot)</h3>
-<div class="price">₹2,099 <span class="old">₹2,499</span></div>
-<a href="https://wa.me/916006773054?text=I want to order Walnut" class="btn">Order Now</a>
+<div class="pricing">₹2,099 <span class="old">₹2,499</span></div>
+<button onclick="order('Walnut - ₹2099')">Order Now</button>
 </div>
 
 <div class="product">
 <h3>Almonds (Badam)</h3>
-<div class="price">₹1,699 <span class="old">₹1,899</span></div>
-<a href="https://wa.me/916006773054?text=I want to order Almonds" class="btn">Order Now</a>
+<div class="pricing">₹1,699 <span class="old">₹1,899</span></div>
+<button onclick="order('Almonds - ₹1699')">Order Now</button>
 </div>
 
 <div class="product">
 <h3>Almonds With Shell</h3>
-<div class="price">₹799 <span class="old">₹899</span></div>
-<a href="https://wa.me/916006773054?text=I want to order Almonds With Shell" class="btn">Order Now</a>
+<div class="pricing">₹799 <span class="old">₹899</span></div>
+<button onclick="order('Almonds With Shell - ₹799')">Order Now</button>
 </div>
-
-</section>
-
-<!-- WELLNESS -->
-<section class="category reveal">
-<h2>Wellness & Essentials</h2>
 
 <div class="product">
 <h3>Shilajit</h3>
-<div class="price">₹749 <span class="old">₹999</span></div>
-<a href="https://wa.me/916006773054?text=I want to order Shilajit" class="btn">Order Now</a>
+<div class="pricing">₹749 <span class="old">₹999</span></div>
+<button onclick="order('Shilajit - ₹749')">Order Now</button>
 </div>
 
 <div class="product">
 <h3>Kehwa</h3>
-<div class="price">₹349 <span class="old">₹399</span></div>
-<a href="https://wa.me/916006773054?text=I want to order Kehwa" class="btn">Order Now</a>
+<div class="pricing">₹349 <span class="old">₹399</span></div>
+<button onclick="order('Kehwa - ₹349')">Order Now</button>
 </div>
 
 <div class="product">
 <h3>Honey</h3>
-<div class="price">₹799 <span class="old">₹899</span></div>
-<a href="https://wa.me/916006773054?text=I want to order Honey" class="btn">Order Now</a>
+<div class="pricing">₹799 <span class="old">₹899</span></div>
+<button onclick="order('Honey - ₹799')">Order Now</button>
 </div>
-
-</section>
-
-<!-- GIFT HAMPERS -->
-<section class="category reveal">
-<h2>Gift Hampers</h2>
 
 <div class="product">
 <h3>Kashmiri Delight Gift Hamper</h3>
-<div class="price">₹1,499 <span class="old">₹1,699</span></div>
-<a href="https://wa.me/916006773054?text=I want to order Gift Hamper" class="btn">Order Now</a>
+<div class="pricing">₹1,499 <span class="old">₹1,699</span></div>
+<button onclick="order('Gift Hamper - ₹1499')">Order Now</button>
 </div>
 
 </section>
 
-<section class="testimonials reveal">
+<section id="whyus" class="reveal">
 <h2>What Our Customers Say</h2>
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>"Premium quality saffron. Truly authentic."</p>
-<div class="buyer">— Aarav, Delhi</div>
+
+<div class="testimonial">
+★★★★★  
+<br><br>
+"Premium quality saffron. Truly authentic."  
+<br><br>
+— Aarav, Delhi
 </div>
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>"Excellent packaging and fast delivery."</p>
-<div class="buyer">— Zoya, Mumbai</div>
+
+<div class="testimonial">
+★★★★★  
+<br><br>
+"Excellent packaging and fast delivery."  
+<br><br>
+— Zoya, Mumbai
 </div>
+
 </section>
 
-<section class="instagram reveal">
+<section id="contact" class="instagram reveal">
 <h2>Follow Our Journey</h2>
-<a href="https://instagram.com/kashmirvalleynaturals" class="ig-btn">
-Visit Instagram
+<p>@kashmirvalleynaturals</p>
+<a href="https://instagram.com/kashmirvalleynaturals" target="_blank">
+<button>Visit Instagram</button>
 </a>
 </section>
 
@@ -384,42 +279,20 @@ Visit Instagram
 © 2025 Kashmir Valley Naturals
 </footer>
 
-<a href="https://wa.me/916006773054" class="floating">WhatsApp Us</a>
+<a href="https://wa.me/916006773054" class="floating-wa">WhatsApp Us</a>
 
 <script>
-window.addEventListener("scroll",()=>{
-if(window.scrollY>50){
-document.getElementById("navbar").classList.add("shrink");
-}else{
-document.getElementById("navbar").classList.remove("shrink");
+function order(product){
+window.open("https://wa.me/916006773054?text=I want to order: "+product);
+}
+
+window.addEventListener('scroll',()=>{
+document.querySelectorAll('.reveal').forEach(el=>{
+if(el.getBoundingClientRect().top < window.innerHeight-100){
+el.classList.add('active');
 }
 });
-
-const observer=new IntersectionObserver((entries)=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("active");
-}
 });
-},{threshold:.15});
-document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-
-let stock=9;
-setInterval(()=>{
-if(stock>5){
-stock--;
-document.getElementById("stock-count").innerText=stock;
-}
-},8000);
-
-const end=new Date().getTime()+3600000;
-setInterval(()=>{
-const now=new Date().getTime();
-const distance=end-now;
-let m=Math.floor((distance%(1000*60*60))/(1000*60));
-let s=Math.floor((distance%(1000*60))/1000);
-document.getElementById("countdown").innerHTML=m+"m "+s+"s";
-},1000);
 </script>
 
 </body>
