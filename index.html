@@ -3,49 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Kashmir Valley Naturals | Authentic Kashmiri Saffron & Premium Dry Fruits</title>
-<meta name="description" content="Buy authentic Kashmiri saffron, dry fruits, shilajit and wellness products directly from Kashmir. Limited harvest. Premium quality.">
+<title>Kashmir Valley Naturals</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-
-/* ---------------- GLOBAL ---------------- */
 body{
 margin:0;
-background:linear-gradient(135deg,#041f14,#062d1f,#041f14);
+background:#052c1a;
 color:#f5f2e9;
 font-family:'Inter',sans-serif;
-overflow-x:hidden;
 }
 
 h1,h2,h3{
 font-family:'Playfair Display',serif;
-margin:0;
 }
 
-/* ---------------- NAVBAR ---------------- */
 .navbar{
-position:sticky;
-top:0;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 8%;
-background:rgba(0,0,0,0.3);
-backdrop-filter:blur(10px);
+padding:20px 8%;
 border-bottom:1px solid rgba(255,255,255,0.1);
-z-index:1000;
 }
 
 .logo span{color:#d4af37;}
-.est{
-font-size:11px;
-letter-spacing:3px;
-color:#d4af37;
-margin-top:4px;
-}
+.est{font-size:11px;color:#d4af37;letter-spacing:2px;}
 
 nav a{
 margin-left:25px;
@@ -53,165 +36,100 @@ text-decoration:none;
 color:#f5f2e9;
 transition:0.3s;
 }
+nav a:hover{color:#d4af37;}
 
-nav a:hover{
-color:#d4af37;
-}
-
-/* ---------------- HERO ---------------- */
 .hero{
 text-align:center;
-padding:120px 20px;
+padding:100px 20px;
 }
+.hero h1{font-size:48px;}
+.hero p{color:#d4af37;}
 
-.hero h1{
-font-size:52px;
-margin-bottom:20px;
-}
-
-.hero p{
-color:#d4af37;
-letter-spacing:1px;
-}
-
-/* ---------------- CATEGORY ---------------- */
 .category{
 padding:70px 8%;
 }
-
 .category h2{
-font-size:36px;
-margin-bottom:40px;
 border-bottom:1px solid rgba(255,255,255,0.1);
 padding-bottom:10px;
+margin-bottom:40px;
 }
 
-/* GRID */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-/* ---------------- PRODUCT ---------------- */
 .product{
-padding:30px;
+margin-bottom:50px;
+padding:25px;
 border:1px solid rgba(255,255,255,0.08);
 transition:0.4s;
-background:rgba(255,255,255,0.02);
 }
-
 .product:hover{
-box-shadow:0 0 30px rgba(212,175,55,0.3);
-transform:translateY(-6px);
+box-shadow:0 0 25px rgba(212,175,55,0.3);
+transform:translateY(-5px);
 }
 
-.best-badge{
+.badge{
 background:#d4af37;
 color:#000;
-padding:6px 12px;
+padding:5px 10px;
 font-size:12px;
 display:inline-block;
 margin-bottom:10px;
 }
 
-.price{
-margin:15px 0;
-}
+.price{margin:15px 0;}
+.price .new{color:#d4af37;font-size:24px;margin-right:10px;}
+.price .old{text-decoration:line-through;opacity:0.5;}
 
-.price .new{
-color:#d4af37;
-font-size:24px;
-margin-right:10px;
-}
+.stock{color:#ff6b6b;}
 
-.price .old{
-text-decoration:line-through;
-opacity:0.5;
-}
-
-.stock{
-color:#ff6b6b;
-margin-bottom:8px;
-}
-
-.timer{
-color:#d4af37;
-margin-bottom:10px;
-font-size:14px;
-}
-
-/* BUTTON */
 .btn{
 display:inline-block;
 padding:12px 28px;
 border:1px solid #d4af37;
 color:#d4af37;
 text-decoration:none;
-transition:0.4s;
+transition:0.3s;
 }
-
 .btn:hover{
 background:#d4af37;
-color:#041f14;
+color:#052c1a;
 box-shadow:0 0 20px #d4af37;
 }
 
-/* ---------------- TESTIMONIAL ---------------- */
-.testimonial{
+/* Testimonials */
+.testimonials{
 padding:80px 8%;
-background:#062d1f;
+background:#06361f;
 }
-
 .review{
 border:1px solid rgba(255,255,255,0.1);
 padding:30px;
 margin-bottom:30px;
 }
+.review span{color:#d4af37;}
 
-/* ---------------- INSTAGRAM ---------------- */
+/* Instagram */
 .instagram{
 padding:80px 8%;
 text-align:center;
 }
+.instagram h2{margin-bottom:15px;}
 
-/* ---------------- FOOTER ---------------- */
 footer{
 text-align:center;
 padding:40px;
 border-top:1px solid rgba(255,255,255,0.1);
 }
 
-/* ---------------- FLOATING WA ---------------- */
 .floating-wa{
 position:fixed;
-right:20px;
 bottom:20px;
+right:20px;
 background:#d4af37;
-color:#041f14;
+color:#052c1a;
 padding:14px 24px;
 border-radius:30px;
 text-decoration:none;
-box-shadow:0 0 25px rgba(212,175,55,0.7);
-animation:glow 2s infinite alternate;
+box-shadow:0 0 25px rgba(212,175,55,0.6);
 }
-
-@keyframes glow{
-from{box-shadow:0 0 10px #d4af37;}
-to{box-shadow:0 0 30px #d4af37;}
-}
-
-/* ---------------- SCROLL ANIMATION ---------------- */
-.reveal{
-opacity:0;
-transform:translateY(40px);
-transition:all 1s ease;
-}
-.reveal.active{
-opacity:1;
-transform:translateY(0);
-}
-
 </style>
 </head>
 
@@ -230,21 +148,18 @@ transform:translateY(0);
 </nav>
 </header>
 
-<section class="hero reveal">
+<section class="hero">
 <h1>Pure From The Heart Of Kashmir</h1>
 <p>Luxury Natural Products • Authentic • Handpicked</p>
 </section>
 
-<!-- SIGNATURE HARVEST -->
-<section class="category reveal">
+<section class="category">
 <h2>Signature Harvest</h2>
-<div class="grid">
 
 <div class="product">
-<div class="best-badge">Best Seller</div>
+<div class="badge">Best Seller</div>
 <h3>Kashmiri Saffron</h3>
-<div class="stock">Only <span id="stock-count">7</span> Left</div>
-<div class="timer">Offer ends in <span id="countdown"></span></div>
+<div class="stock">Only 7 Left In Stock</div>
 <div class="price">
 <span class="new">₹349</span>
 <span class="old">₹399</span>
@@ -258,40 +173,86 @@ transform:translateY(0);
 <span class="new">₹799</span>
 <span class="old">₹999</span>
 </div>
-<a href="#" class="btn">Order Now</a>
+<a href="https://wa.me/916006773054?text=I want to order Saffron Oil" class="btn">Order Now</a>
 </div>
 
-</div>
 </section>
 
-<!-- DRY FRUITS -->
-<section class="category reveal">
+<section class="category">
 <h2>Premium Dry Fruits</h2>
-<div class="grid">
 
-<div class="product"><h3>Walnut</h3><div class="price"><span class="new">₹2,099</span><span class="old">₹2,499</span></div><a href="#" class="btn">Order Now</a></div>
-
-<div class="product"><h3>Almonds</h3><div class="price"><span class="new">₹1,699</span><span class="old">₹1,899</span></div><a href="#" class="btn">Order Now</a></div>
-
-<div class="product"><h3>Almonds With Shell</h3><div class="price"><span class="new">₹799</span><span class="old">₹899</span></div><a href="#" class="btn">Order Now</a></div>
-
+<div class="product">
+<h3>Walnut (Akhrot)</h3>
+<div class="price"><span class="new">₹2,099</span><span class="old">₹2,499</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Walnut" class="btn">Order Now</a>
 </div>
+
+<div class="product">
+<h3>Almonds (Badam)</h3>
+<div class="price"><span class="new">₹1,699</span><span class="old">₹1,899</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Almonds" class="btn">Order Now</a>
+</div>
+
+<div class="product">
+<h3>Almonds With Shell</h3>
+<div class="price"><span class="new">₹799</span><span class="old">₹899</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Almonds With Shell" class="btn">Order Now</a>
+</div>
+
 </section>
 
-<!-- WELLNESS -->
-<section class="category reveal">
+<section class="category">
 <h2>Wellness & Essentials</h2>
-<div class="grid">
 
-<div class="product"><h3>Shilajit</h3><div class="price"><span class="new">₹749</span><span class="old">₹999</span></div><a href="#" class="btn">Order Now</a></div>
-
-<div class="product"><h3>Kehwa</h3><div class="price"><span class="new">₹349</span><span class="old">₹399</span></div><a href="#" class="btn">Order Now</a></div>
-
-<div class="product"><h3>Honey</h3><div class="price"><span class="new">₹799</span><span class="old">₹899</span></div><a href="#" class="btn">Order Now</a></div>
-
-<div class="product"><h3>Gift Hamper</h3><div class="price"><span class="new">₹1,499</span><span class="old">₹1,699</span></div><a href="#" class="btn">Order Now</a></div>
-
+<div class="product">
+<h3>Shilajit</h3>
+<div class="price"><span class="new">₹749</span><span class="old">₹999</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Shilajit" class="btn">Order Now</a>
 </div>
+
+<div class="product">
+<h3>Kehwa</h3>
+<div class="price"><span class="new">₹349</span><span class="old">₹399</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Kehwa" class="btn">Order Now</a>
+</div>
+
+<div class="product">
+<h3>Honey</h3>
+<div class="price"><span class="new">₹799</span><span class="old">₹899</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Honey" class="btn">Order Now</a>
+</div>
+
+<div class="product">
+<h3>Kashmiri Delight Gift Hamper</h3>
+<div class="price"><span class="new">₹1,499</span><span class="old">₹1,699</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Gift Hamper" class="btn">Order Now</a>
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+<h2>Customer Reviews</h2>
+
+<div class="review">
+<span>★★★★★</span>
+<p>"Premium quality saffron. Truly authentic."</p>
+<p>— Aarav, Delhi (Verified Buyer)</p>
+</div>
+
+<div class="review">
+<span>★★★★★</span>
+<p>"Excellent packaging and fast delivery."</p>
+<p>— Zoya, Mumbai (Verified Buyer)</p>
+</div>
+
+</section>
+
+<!-- INSTAGRAM -->
+<section class="instagram">
+<h2>Follow Our Journey</h2>
+<p>@kashmirvalleynaturals</p>
+<a href="https://instagram.com/kashmirvalleynaturals" class="btn">Visit Instagram</a>
 </section>
 
 <footer>
@@ -299,37 +260,6 @@ transform:translateY(0);
 </footer>
 
 <a href="https://wa.me/916006773054" class="floating-wa">WhatsApp Us</a>
-
-<script>
-
-// Scroll reveal
-window.addEventListener('scroll',()=>{
-document.querySelectorAll('.reveal').forEach(el=>{
-if(el.getBoundingClientRect().top < window.innerHeight-100){
-el.classList.add('active');
-}
-});
-});
-
-// Stock counter
-let stock=7;
-setInterval(()=>{
-if(stock>3){
-stock--;
-document.getElementById("stock-count").innerText=stock;
-}
-},10000);
-
-// Countdown (1 hour)
-let time=3600;
-setInterval(()=>{
-let minutes=Math.floor(time/60);
-let seconds=time%60;
-document.getElementById("countdown").innerText=`${minutes}m ${seconds}s`;
-time--;
-},1000);
-
-</script>
 
 </body>
 </html>
