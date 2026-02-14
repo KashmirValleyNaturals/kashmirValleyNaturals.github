@@ -3,271 +3,213 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Kashmir Valley Naturals</title>
 
-<meta name="description" content="Authentic Kashmiri saffron, dry fruits and wellness products sourced directly from Kashmir. Established 2025.">
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:#fafafa;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:#f4f4f4;
+}
+
+.category{
+    padding:40px 20px;
+}
+
+.product{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:8px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.pricing{
+    margin:10px 0;
+}
+
+.new{
+    color:#111;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.old{
+    text-decoration:line-through;
+    color:gray;
+    margin-left:10px;
+}
+
+.order-btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+</style>
+
 </head>
 
 <body>
 
-<header class="navbar">
-  <div class="logo">
-    Kashmir Valley <span>Naturals</span>
-    <div class="est">Established 2025</div>
-  </div>
-
-  <nav class="nav-links">
-    <a href="about.html">About</a>
-    <a href="why-us.html">Why Us</a>
-    <a href="contact.html">Contact</a>
-    <div class="cart-icon" onclick="toggleCart()">
-  🛒 <span id="cart-count">0</span>
-</div>
-  </nav>
+<header>
+    <div><strong>Kashmir Valley Naturals</strong></div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
 </header>
 
-<section class="hero reveal">
-  <h1>Buy Authentic Kashmiri Saffron & Premium Dry Fruits Online</h1>
-  <p>Rare • Limited Harvest • Delivered Across India</p>
-</section>
-
-<section class="scarcity reveal">
-  Limited seasonal harvest. Selected products available in small batches only.
+<section class="hero">
+    <h1>Buy Authentic Kashmiri Saffron & Premium Dry Fruits</h1>
+    <p>Rare • Limited Harvest • Delivered Across India</p>
 </section>
 
 <!-- SIGNATURE HARVEST -->
-<section class="category reveal">
-  <h2>Signature Harvest</h2>
+<section class="category">
+<h2>Signature Harvest</h2>
 
-  <div class="product reveal">
-    <div class="badge">Best Seller</div>
+<div class="product">
     <h3>Kashmiri Saffron (Kesar)</h3>
     <div class="pricing">
-      <span class="new">₹349</span>
-      <span class="old">₹399</span>
+        <span class="new">₹349</span>
+        <span class="old">₹399</span>
     </div>
-    <div class="stock">Only limited stock available</div>
-    <button class="add-to-cart-btn"
-        onclick="addToCart('Saffron', 349)">
-  Add To Cart
-</button>
-  </div>
+    <a href="https://wa.me/916006773054?text=Hello%20Kashmir%20Valley%20Naturals,%20I%20want%20to%20order%20Kashmiri%20Saffron%20(₹349)." 
+       target="_blank" 
+       class="order-btn">Order on WhatsApp</a>
+</div>
 
-  <div class="product reveal">
+<div class="product">
     <h3>Saffron Oil</h3>
     <div class="pricing">
-      <span class="new">₹799</span>
-      <span class="old">₹999</span>
+        <span class="new">₹799</span>
+        <span class="old">₹999</span>
     </div>
-    <button class="add-to-cart-btn"
-        onclick="addToCart('Saffron Oil', 799)">
-  Add To Cart
-</button>
-  </div>
+    <a href="https://wa.me/916006773054?text=Hello%20Kashmir%20Valley%20Naturals,%20I%20want%20to%20order%20Saffron%20Oil%20(₹799)." 
+       target="_blank" 
+       class="order-btn">Order on WhatsApp</a>
+</div>
+
 </section>
 
 <!-- PREMIUM DRY FRUITS -->
-<section class="category reveal">
-  <h2>Premium Dry Fruits</h2>
+<section class="category">
+<h2>Premium Dry Fruits</h2>
 
-  <div class="product reveal">
+<div class="product">
     <h3>Walnut (Akhrot)</h3>
     <div class="pricing">
-      <span class="new">₹2,099</span>
-      <span class="old">₹2,499</span>
+        <span class="new">₹2,099</span>
+        <span class="old">₹2,499</span>
     </div>
-    <button class="add-to-cart-btn"
-        onclick="addToCart('Walnut', 2,099)">
-  Add To Cart
-</button>
-  </div>
+    <a href="https://wa.me/916006773054?text=Hello%20Kashmir%20Valley%20Naturals,%20I%20want%20to%20order%20Walnut%20(₹2,099)." 
+       target="_blank" 
+       class="order-btn">Order on WhatsApp</a>
+</div>
 
-  <div class="product reveal">
+<div class="product">
     <h3>Almonds (Badam)</h3>
     <div class="pricing">
-      <span class="new">₹1,699</span>
-      <span class="old">₹1,899</span>
+        <span class="new">₹1,699</span>
+        <span class="old">₹1,899</span>
     </div>
-    <button class="add-to-cart-btn"
-        onclick="addToCart('Almonds', 1,699)">
-  Add To Cart
-</button>
-  </div>
+    <a href="https://wa.me/916006773054?text=Hello%20Kashmir%20Valley%20Naturals,%20I%20want%20to%20order%20Almonds%20(₹1,699)." 
+       target="_blank" 
+       class="order-btn">Order on WhatsApp</a>
+</div>
 
-  <div class="product reveal">
+<div class="product">
     <h3>Almonds With Shell</h3>
     <div class="pricing">
-      <span class="new">₹799</span>
-      <span class="old">₹899</span>
+        <span class="new">₹799</span>
+        <span class="old">₹899</span>
     </div>
-    <button class="add-to-cart-btn"
-        onclick="addToCart('Almonds with shell', 799)">
-  Add To Cart
-</button>
-  </div>
+    <a href="https://wa.me/916006773054?text=Hello%20Kashmir%20Valley%20Naturals,%20I%20want%20to%20order%20Almonds%20with%20shell%20(₹799)." 
+       target="_blank" 
+       class="order-btn">Order on WhatsApp</a>
+</div>
+
 </section>
 
 <!-- WELLNESS & GIFTS -->
-<section class="category reveal">
-  <h2>Wellness & Gifts</h2>
+<section class="category">
+<h2>Wellness & Gifts</h2>
 
-  <div class="product reveal">
+<div class="product">
     <h3>Shilajit</h3>
     <div class="pricing">
-      <span class="new">₹749</span>
-      <span class="old">₹999</span>
+        <span class="new">₹749</span>
+        <span class="old">₹999</span>
     </div>
-    <button class="add-to-cart-btn"
-        onclick="addToCart('Shilajit', 749)">
-  Add To Cart
-</button>
-  </div>
+    <a href="https://wa.me/916006773054?text=Hello%20Kashmir%20Valley%20Naturals,%20I%20want%20to%20order%20Shilajit%20(₹749)." 
+       target="_blank" 
+       class="order-btn">Order on WhatsApp</a>
+</div>
 
-  <div class="product reveal">
+<div class="product">
     <h3>Kehwa</h3>
     <div class="pricing">
-      <span class="new">₹349</span>
-      <span class="old">₹399</span>
+        <span class="new">₹349</span>
+        <span class="old">₹399</span>
     </div>
-    <button class="add-to-cart-btn"
-        onclick="addToCart('Kehwa', 349)">
-  Add To Cart
-</button>
-  </div>
+    <a href="https://wa.me/916006773054?text=Hello%20Kashmir%20Valley%20Naturals,%20I%20want%20to%20order%20Kehwa%20(₹349)." 
+       target="_blank" 
+       class="order-btn">Order on WhatsApp</a>
+</div>
 
-  <div class="product reveal">
+<div class="product">
     <h3>Honey</h3>
     <div class="pricing">
-      <span class="new">₹799</span>
-      <span class="old">₹899</span>
+        <span class="new">₹799</span>
+        <span class="old">₹899</span>
     </div>
-    <button class="add-to-cart-btn"
-        onclick="addToCart('Honey', 799)">
-  Add To Cart
-</button>
-  </div>
+    <a href="https://wa.me/916006773054?text=Hello%20Kashmir%20Valley%20Naturals,%20I%20want%20to%20order%20Honey%20(₹799)." 
+       target="_blank" 
+       class="order-btn">Order on WhatsApp</a>
+</div>
 
-  <div class="product reveal">
+<div class="product">
     <h3>Kashmiri Delight Gift Hamper</h3>
     <div class="pricing">
-      <span class="new">₹1,499</span>
-      <span class="old">₹1,699</span>
+        <span class="new">₹1,499</span>
+        <span class="old">₹1,699</span>
     </div>
-    <button class="add-to-cart-btn"
-        onclick="addToCart('Hamper', 1499)">
-  Add To Cart
-</button>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section class="testimonials reveal">
-  <h2>Customer Reviews</h2>
-
-  <div class="testimonial-box">
-    <div class="stars">★★★★★</div>
-    <p>"Premium quality saffron. Truly authentic."</p>
-    <span>— Aarav, Delhi</span>
-    <div class="verified">Verified Buyer</div>
-  </div>
-
-  <div class="testimonial-box">
-    <div class="stars">★★★★★</div>
-    <p>"Excellent packaging and fast delivery."</p>
-    <span>— Zoya, Mumbai</span>
-    <div class="verified">Verified Buyer</div>
-  </div>
-</section>
-
-<!-- PREMIUM INSTAGRAM -->
-<section class="lux-divider"></section>
-
-<section class="instagram-premium reveal">
-  <div class="insta-container">
-    <div class="insta-top-line"></div>
-    <p class="insta-label">Beyond The Website</p>
-    <h2 class="insta-handle">@kashmirvalleynaturals</h2>
-    <p class="insta-description">
-      A closer look at our harvest, craftsmanship and quiet details.
-    </p>
-    <a href="https://instagram.com/kashmirvalleynaturals"
-       target="_blank"
-       class="insta-premium-btn">
-       Enter The World
-    </a>
-  </div>
-</section>
-
-<footer>
-  © 2025 Kashmir Valley Naturals
-</footer>
-
-<a href="https://wa.me/916006773054" class="floating-wa">WhatsApp Us</a>
-
-<script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
-}, {
-  threshold: 0.15
-});
-
-document.querySelectorAll(".reveal").forEach((el) => {
-  observer.observe(el);
-});
-...
-</footer>
-</footer>
-
-<a href="https://wa.me/916006773054" class="floating-wa">
-  WhatsApp Us
-</a>
-
-<!-- 🔽 ADD CART DRAWER HERE 🔽 -->
-<div id="cart-drawer" class="cart-drawer">
-  <div class="cart-header">
-    <h3>Your Cart</h3>
-    <span onclick="toggleCart()" class="close-cart">✕</span>
-  </div>
-
-  <div id="cart-items"></div>
-
-  <div class="cart-footer">
-    <p>Total: ₹<span id="cart-total">0</span></p>
-    <button onclick="placeOrder()" class="cart-order-btn">
-      Place Order via WhatsApp
-    </button>
-  </div>
-</div>
-</footer>
-
-<a href="https://wa.me/916006773054" class="floating-wa">
-  WhatsApp Us
-</a>
-
-<!-- CART DRAWER -->
-<div id="cart-drawer" class="cart-drawer">
-
-  <div class="cart-header">
-    <h3>Your Cart</h3>
-    <span onclick="toggleCart()" class="close-cart">×</span>
-  </div>
-
-  <div id="cart-items"></div>
-
-  <div class="cart-footer">
-    <p>Total: ₹<span id="cart-total">0</span></p>
-    <button onclick="placeOrder()" class="cart-order-btn">
-      Place Order via WhatsApp
-    </button>
-  </div>
-
+    <a href="https://wa.me/916006773054?text=Hello%20Kashmir%20Valley%20Naturals,%20I%20want%20to%20order%20Gift%20Hamper%20(₹1,499)." 
+       target="_blank" 
+       class="order-btn">Order on WhatsApp</a>
 </div>
 
+</section>
+
+</body>
+</html>
