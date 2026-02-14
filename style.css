@@ -46,7 +46,6 @@ body {
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
-  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -54,6 +53,13 @@ body {
   margin-top: 20px;
   color: #c6a85b;
   letter-spacing: 1px;
+}
+
+.limited {
+  margin-top: 20px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #c6a85b;
 }
 
 /* PRODUCTS */
@@ -66,21 +72,38 @@ body {
 .product {
   border-bottom: 1px solid rgba(255,255,255,0.1);
   padding: 40px 0;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.product:hover {
+  background: rgba(255,255,255,0.03);
+  padding-left: 10px;
+  transition: 0.3s;
+}
+
+.product:nth-child(1){animation-delay:0.1s;}
+.product:nth-child(2){animation-delay:0.2s;}
+.product:nth-child(3){animation-delay:0.3s;}
+.product:nth-child(4){animation-delay:0.4s;}
+.product:nth-child(5){animation-delay:0.5s;}
+.product:nth-child(6){animation-delay:0.6s;}
+.product:nth-child(7){animation-delay:0.7s;}
+.product:nth-child(8){animation-delay:0.8s;}
+.product:nth-child(9){animation-delay:0.9s;}
+
+@keyframes fadeUp {
+  to { opacity:1; transform:translateY(0); }
 }
 
 .product h2 {
   font-family: 'Playfair Display', serif;
   font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.pricing {
-  margin-bottom: 20px;
 }
 
 .new {
   font-size: 20px;
-  font-weight: 500;
   color: #c6a85b;
   margin-right: 15px;
 }
@@ -90,7 +113,6 @@ body {
   color: #888;
 }
 
-/* BUTTON */
 .btn {
   display: inline-block;
   padding: 10px 22px;
@@ -115,42 +137,29 @@ body {
 
 .instagram h2 {
   font-family: 'Playfair Display', serif;
-  margin-bottom: 15px;
 }
 
-/* PAGE SECTIONS */
-.page-section {
-  max-width: 800px;
-  margin: auto;
-  padding: 120px 20px;
-  text-align: center;
+/* FLOATING WHATSAPP */
+.floating-wa {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #c6a85b;
+  color: #0f1c16;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: 0.3s;
 }
 
-.page-section h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  margin-bottom: 40px;
+.floating-wa:hover {
+  transform: translateY(-3px);
 }
 
-.page-section p {
-  line-height: 1.8;
-  color: #cfcfcf;
-  margin-bottom: 20px;
-}
-
-.why-box {
-  margin-bottom: 40px;
-}
-
-.why-box h3 {
-  color: #c6a85b;
-  margin-bottom: 10px;
-}
-
-/* FOOTER */
 footer {
   text-align: center;
   padding: 40px;
-  font-size: 14px;
   color: #777;
 }
