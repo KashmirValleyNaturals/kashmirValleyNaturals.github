@@ -12,39 +12,13 @@
 
 :root{
 --gold:#d4af37;
---soft-gold:#e6c766;
+--soft:#e6c766;
 }
 
 body{
 background:#041f14;
 color:#e9e4db;
 font-family:'Inter',sans-serif;
-overflow-x:hidden;
-}
-
-/* LOADER */
-#loader{
-position:fixed;
-top:0;left:0;
-width:100%;height:100%;
-background:#041f14;
-display:flex;
-justify-content:center;
-align-items:center;
-z-index:9999;
-transition:opacity 1s ease;
-}
-.loader-logo{
-font-family:'Playfair Display',serif;
-font-size:34px;
-color:var(--gold);
-animation:pulse 2s infinite;
-text-align:center;
-}
-@keyframes pulse{
-0%{opacity:0.5;}
-50%{opacity:1;}
-100%{opacity:0.5;}
 }
 
 /* HEADER */
@@ -53,204 +27,196 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:25px 8%;
+background:#041f14;
 position:sticky;
 top:0;
-background:rgba(4,31,20,0.95);
-backdrop-filter:blur(10px);
 z-index:1000;
 }
+
 .logo{
 font-family:'Playfair Display',serif;
 font-size:26px;
 line-height:1.1;
 }
+
 .logo span{color:var(--gold);}
 .est{
 font-size:12px;
 letter-spacing:3px;
-margin-top:8px;
+margin-top:6px;
 color:rgba(212,175,55,0.7);
 }
+
 nav a{
 color:#e9e4db;
 text-decoration:none;
 margin-left:30px;
 font-size:14px;
 letter-spacing:1px;
-transition:.4s;
+transition:.3s;
 }
+
 nav a:hover{color:var(--gold);}
 
 /* HERO */
+
 .hero{
 padding:140px 8%;
 text-align:center;
 }
-.shimmer{
-background:linear-gradient(90deg,var(--gold),#fff,var(--gold));
-background-size:200%;
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-animation:shine 5s infinite linear;
+
+.hero h1{
 font-family:'Playfair Display',serif;
 font-size:60px;
 line-height:1.2;
 }
-@keyframes shine{
-0%{background-position:-200%;}
-100%{background-position:200%;}
-}
+
 .hero p{
 margin-top:25px;
-color:var(--soft-gold);
+color:var(--soft);
 letter-spacing:2px;
 }
 
-/* PRODUCTS */
-.products{padding:80px 8%;}
-.product{
-border-top:1px solid rgba(255,255,255,0.06);
-padding:80px 0;
+/* CATEGORY */
+
+.category{
+padding:100px 8% 40px;
 }
-.product h2{
+
+.category h2{
 font-family:'Playfair Display',serif;
-font-size:40px;
+font-size:42px;
+margin-bottom:50px;
+border-bottom:1px solid rgba(255,255,255,0.08);
+padding-bottom:20px;
 }
+
+/* PRODUCT */
+
+.product{
+padding:60px 0;
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.product h3{
+font-family:'Playfair Display',serif;
+font-size:36px;
+}
+
+.badge{
+display:inline-block;
+background:var(--gold);
+color:#041f14;
+font-size:12px;
+padding:6px 14px;
+margin-left:15px;
+letter-spacing:1px;
+}
+
+.stock{
+margin-top:10px;
+color:#ff6b6b;
+font-size:14px;
+letter-spacing:1px;
+}
+
 .price{
 margin-top:15px;
-font-size:28px;
+font-size:24px;
 color:var(--gold);
 }
+
 .old{
 text-decoration:line-through;
 color:#666;
 margin-left:15px;
-font-size:20px;
+font-size:18px;
 }
+
 .btn{
 display:inline-block;
-margin-top:35px;
-padding:14px 48px;
+margin-top:25px;
+padding:14px 45px;
 border:1px solid var(--gold);
 color:var(--gold);
 text-decoration:none;
 letter-spacing:2px;
-transition:.4s;
-position:relative;
-overflow:hidden;
+transition:.3s;
 }
-.btn::before{
-content:"";
-position:absolute;
-width:100%;height:100%;
+
+.btn:hover{
 background:var(--gold);
-top:0;left:-100%;
-transition:.4s;
-z-index:-1;
+color:#041f14;
 }
-.btn:hover::before{left:0;}
-.btn:hover{color:#041f14;}
 
 /* TESTIMONIALS */
+
 .testimonials{
 padding:140px 8%;
 text-align:center;
 }
+
 .testimonials h2{
 font-family:'Playfair Display',serif;
-font-size:46px;
+font-size:44px;
 margin-bottom:60px;
 }
-.slider{
-display:flex;
-transition:transform 1s ease;
-}
+
 .review{
-min-width:100%;
-border:1px solid rgba(255,255,255,0.06);
+border:1px solid rgba(255,255,255,0.08);
 padding:50px;
+margin-bottom:40px;
 }
-.stars{color:var(--gold);font-size:22px;}
-.review p{margin:25px 0;font-style:italic;}
-.buyer{color:#aaa;}
-.verified{
-display:inline-block;
-margin-top:15px;
-padding:6px 18px;
-background:var(--gold);
-color:#041f14;
-font-size:12px;
-}
+
+.stars{color:var(--gold);}
+.buyer{margin-top:15px;color:#aaa;}
 
 /* INSTAGRAM */
+
 .instagram{
-padding:140px 8%;
+padding:120px 8%;
 text-align:center;
 }
+
 .instagram h2{
 font-family:'Playfair Display',serif;
-font-size:46px;
+font-size:44px;
 }
-.instagram p{margin-top:20px;color:#aaa;}
+
 .ig-btn{
 display:inline-block;
-margin-top:40px;
-padding:16px 50px;
-background:linear-gradient(135deg,var(--gold),var(--soft-gold));
+margin-top:30px;
+padding:14px 45px;
+background:var(--gold);
 color:#041f14;
 text-decoration:none;
-font-weight:500;
-transition:.4s;
 }
-.ig-btn:hover{transform:scale(1.05);}
 
 /* FOOTER */
+
 footer{
 text-align:center;
-padding:80px 0;
+padding:60px 0;
 color:#777;
 }
 
 /* FLOATING WA */
+
 .floating{
 position:fixed;
 bottom:25px;
 right:25px;
-background:linear-gradient(135deg,var(--gold),var(--soft-gold));
+background:linear-gradient(135deg,var(--gold),var(--soft));
 color:#041f14;
-padding:16px 32px;
+padding:15px 30px;
 border-radius:40px;
 text-decoration:none;
-font-weight:500;
-box-shadow:0 0 25px rgba(212,175,55,0.3);
 }
 
-/* FADE */
-.fade{
-opacity:0;
-transform:translateY(50px);
-transition:1.2s ease;
-}
-.fade.show{
-opacity:1;
-transform:translateY(0);
-}
-
-@media(max-width:768px){
-.shimmer{font-size:38px;}
-.product h2{font-size:28px;}
-header{flex-direction:column;gap:15px;}
-}
 </style>
 </head>
 
 <body>
-
-<div id="loader">
-<div class="loader-logo">
-Kashmir Valley<br><span>Naturals</span>
-</div>
-</div>
 
 <header>
 <div class="logo">
@@ -266,91 +232,118 @@ Kashmir Valley<br><span>Naturals</span>
 </nav>
 </header>
 
-<section class="hero fade">
-<h1 class="shimmer">Pure From The<br>Heart of Kashmir</h1>
+<section class="hero">
+<h1>Pure From The<br>Heart of Kashmir</h1>
 <p>Luxury Natural Products • Authentic • Handpicked</p>
 </section>
 
-<section class="products">
+<!-- SIGNATURE HARVEST -->
 
-<div class="product fade">
-<h2>Kashmiri Saffron (Kesar)</h2>
+<section class="category">
+<h2>Signature Harvest</h2>
+
+<div class="product">
+<h3>Kashmiri Saffron (Kesar)
+<span class="badge">Best Seller</span>
+</h3>
+<div class="stock">Limited Stock Available</div>
 <div class="price">₹349 <span class="old">₹399</span></div>
 <a href="https://wa.me/916006773054?text=I want to order Kashmiri Saffron" class="btn">Order Now</a>
 </div>
 
-<div class="product fade">
-<h2>Saffron Oil</h2>
+<div class="product">
+<h3>Saffron Oil</h3>
 <div class="price">₹799 <span class="old">₹999</span></div>
 <a href="https://wa.me/916006773054?text=I want to order Saffron Oil" class="btn">Order Now</a>
 </div>
 
-<div class="product fade">
-<h2>Walnut (Akhrot)</h2>
+</section>
+
+<!-- PREMIUM DRY FRUITS -->
+
+<section class="category">
+<h2>Premium Dry Fruits</h2>
+
+<div class="product">
+<h3>Walnut (Akhrot)</h3>
 <div class="price">₹2,099 <span class="old">₹2,499</span></div>
 <a href="https://wa.me/916006773054?text=I want to order Walnut" class="btn">Order Now</a>
 </div>
 
-<div class="product fade">
-<h2>Almonds (Badam)</h2>
+<div class="product">
+<h3>Almonds (Badam)</h3>
 <div class="price">₹1,699 <span class="old">₹1,899</span></div>
 <a href="https://wa.me/916006773054?text=I want to order Almonds" class="btn">Order Now</a>
 </div>
 
-<div class="product fade">
-<h2>Almonds With Shell</h2>
+<div class="product">
+<h3>Almonds With Shell</h3>
 <div class="price">₹799 <span class="old">₹899</span></div>
 <a href="https://wa.me/916006773054?text=I want to order Almonds With Shell" class="btn">Order Now</a>
 </div>
 
-<div class="product fade">
-<h2>Shilajit</h2>
+</section>
+
+<!-- WELLNESS -->
+
+<section class="category">
+<h2>Wellness & Essentials</h2>
+
+<div class="product">
+<h3>Shilajit</h3>
 <div class="price">₹749 <span class="old">₹999</span></div>
 <a href="https://wa.me/916006773054?text=I want to order Shilajit" class="btn">Order Now</a>
 </div>
 
-<div class="product fade">
-<h2>Kehwa</h2>
+<div class="product">
+<h3>Kehwa</h3>
 <div class="price">₹349 <span class="old">₹399</span></div>
 <a href="https://wa.me/916006773054?text=I want to order Kehwa" class="btn">Order Now</a>
 </div>
 
-<div class="product fade">
-<h2>Honey</h2>
+<div class="product">
+<h3>Honey</h3>
 <div class="price">₹799 <span class="old">₹899</span></div>
 <a href="https://wa.me/916006773054?text=I want to order Honey" class="btn">Order Now</a>
 </div>
 
-<div class="product fade">
-<h2>Kashmiri Delight Gift Hamper</h2>
+</section>
+
+<!-- GIFT HAMPERS -->
+
+<section class="category">
+<h2>Gift Hampers</h2>
+
+<div class="product">
+<h3>Kashmiri Delight Gift Hamper</h3>
 <div class="price">₹1,499 <span class="old">₹1,699</span></div>
 <a href="https://wa.me/916006773054?text=I want to order Gift Hamper" class="btn">Order Now</a>
 </div>
 
 </section>
 
-<section class="testimonials fade">
+<section class="testimonials">
 <h2>What Our Customers Say</h2>
-<div class="slider" id="slider">
+
 <div class="review">
 <div class="stars">★★★★★</div>
 <p>"Premium quality saffron. Truly authentic."</p>
 <div class="buyer">— Aarav, Delhi</div>
-<div class="verified">Verified Buyer</div>
 </div>
+
 <div class="review">
 <div class="stars">★★★★★</div>
 <p>"Excellent packaging and fast delivery."</p>
 <div class="buyer">— Zoya, Mumbai</div>
-<div class="verified">Verified Buyer</div>
 </div>
-</div>
+
 </section>
 
-<section class="instagram fade">
-<h2>Experience The Brand Beyond The Website</h2>
-<p>@kashmirvalleynaturals</p>
-<a href="https://instagram.com/kashmirvalleynaturals" class="ig-btn">Visit Instagram</a>
+<section class="instagram">
+<h2>Follow Our Journey</h2>
+<a href="https://instagram.com/kashmirvalleynaturals" class="ig-btn">
+Visit Instagram
+</a>
 </section>
 
 <footer>
@@ -358,32 +351,6 @@ Kashmir Valley<br><span>Naturals</span>
 </footer>
 
 <a href="https://wa.me/916006773054" class="floating">WhatsApp Us</a>
-
-<script>
-window.addEventListener("load",()=>{
-const loader=document.getElementById("loader");
-loader.style.opacity="0";
-setTimeout(()=>{loader.style.display="none";},1000);
-});
-
-const observer=new IntersectionObserver((entries)=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("show");
-}
-});
-},{threshold:0.2});
-
-document.querySelectorAll(".fade").forEach(el=>{
-observer.observe(el);
-});
-
-let index=0;
-setInterval(()=>{
-index=(index+1)%2;
-document.getElementById("slider").style.transform=`translateX(-${index*100}%)`;
-},4000);
-</script>
 
 </body>
 </html>
