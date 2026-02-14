@@ -10,211 +10,200 @@
 <style>
 
 body{
-    margin:0;
-    background:#062b1c;
-    color:#e8e3d9;
-    font-family:'Inter',sans-serif;
+margin:0;
+background:#062b1c;
+color:#e8e3d9;
+font-family:'Inter',sans-serif;
+overflow-x:hidden;
 }
 
 /* NAV */
 
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:30px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 8%;
 }
 
 .logo{
-    font-family:'Playfair Display',serif;
-    font-size:28px;
-    line-height:1.1;
+font-family:'Playfair Display',serif;
+font-size:28px;
+line-height:1.1;
 }
 
-.logo span{
-    color:#d4af37;
-}
+.logo span{ color:#d4af37; }
 
 nav a{
-    color:#e8e3d9;
-    text-decoration:none;
-    margin-left:35px;
-    font-size:14px;
-    letter-spacing:1px;
-    transition:.3s;
+color:#e8e3d9;
+text-decoration:none;
+margin-left:35px;
+font-size:14px;
+letter-spacing:1px;
+transition:.3s;
 }
 
-nav a:hover{
-    color:#d4af37;
-}
+nav a:hover{ color:#d4af37; }
 
 /* HERO */
 
 .hero{
-    padding:100px 8%;
-    text-align:center;
+padding:120px 8%;
+text-align:center;
 }
 
 .hero h1{
-    font-family:'Playfair Display',serif;
-    font-size:60px;
-    line-height:1.2;
-    margin:0;
+font-family:'Playfair Display',serif;
+font-size:60px;
+margin:0;
 }
 
 .hero p{
-    margin-top:25px;
-    color:#d4af37;
-    letter-spacing:2px;
+margin-top:25px;
+color:#d4af37;
+letter-spacing:2px;
 }
 
 /* PRODUCTS */
 
-.products{
-    padding:60px 8%;
-}
+.products{ padding:60px 8%; }
 
 .product{
-    border-top:1px solid rgba(255,255,255,0.1);
-    padding:60px 0;
+border-top:1px solid rgba(255,255,255,0.08);
+padding:70px 0;
 }
 
 .product h2{
-    font-family:'Playfair Display',serif;
-    font-size:40px;
+font-family:'Playfair Display',serif;
+font-size:42px;
+margin:0;
 }
 
 .price{
-    font-size:28px;
-    color:#d4af37;
-    margin-top:10px;
+font-size:28px;
+color:#d4af37;
+margin-top:15px;
 }
 
 .old{
-    text-decoration:line-through;
-    color:#888;
-    margin-left:15px;
-    font-size:20px;
+text-decoration:line-through;
+color:#777;
+margin-left:15px;
+font-size:20px;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:25px;
-    padding:14px 40px;
-    border:1px solid #d4af37;
-    color:#d4af37;
-    text-decoration:none;
-    letter-spacing:2px;
-    transition:.3s;
+display:inline-block;
+margin-top:30px;
+padding:14px 45px;
+border:1px solid #d4af37;
+color:#d4af37;
+text-decoration:none;
+letter-spacing:2px;
+transition:.3s;
 }
 
 .btn:hover{
-    background:#d4af37;
-    color:#062b1c;
+background:#d4af37;
+color:#062b1c;
 }
 
 /* TESTIMONIALS */
 
 .testimonials{
-    padding:100px 8%;
-    text-align:center;
+padding:120px 8%;
+text-align:center;
 }
 
 .testimonials h2{
-    font-family:'Playfair Display',serif;
-    font-size:42px;
-    margin-bottom:60px;
+font-family:'Playfair Display',serif;
+font-size:44px;
+margin-bottom:70px;
 }
 
 .review{
-    border:1px solid rgba(255,255,255,0.1);
-    padding:40px;
-    margin-bottom:40px;
+border:1px solid rgba(255,255,255,0.08);
+padding:45px;
+margin-bottom:40px;
 }
 
-.stars{
-    color:#d4af37;
-    font-size:22px;
-}
+.stars{ color:#d4af37; font-size:22px; }
 
 .review p{
-    font-style:italic;
-    margin:20px 0;
+font-style:italic;
+margin:20px 0;
 }
 
-.buyer{
-    margin-top:15px;
-    color:#aaa;
-}
+.buyer{ color:#aaa; margin-top:10px; }
 
 .verified{
-    display:inline-block;
-    margin-top:15px;
-    padding:6px 15px;
-    background:#d4af37;
-    color:#062b1c;
-    font-size:12px;
+display:inline-block;
+margin-top:15px;
+padding:6px 15px;
+background:#d4af37;
+color:#062b1c;
+font-size:12px;
 }
 
 /* INSTAGRAM */
 
 .instagram{
-    padding:100px 8%;
-    text-align:center;
+padding:120px 8%;
+text-align:center;
 }
 
 .instagram h2{
-    font-family:'Playfair Display',serif;
-    font-size:42px;
+font-family:'Playfair Display',serif;
+font-size:44px;
 }
 
 .instagram p{
-    color:#aaa;
-    margin-top:20px;
+margin-top:20px;
+color:#aaa;
 }
 
 .ig-btn{
-    display:inline-block;
-    margin-top:35px;
-    padding:14px 40px;
-    background:#d4af37;
-    color:#062b1c;
-    text-decoration:none;
+display:inline-block;
+margin-top:35px;
+padding:14px 45px;
+background:#d4af37;
+color:#062b1c;
+text-decoration:none;
 }
 
 /* FOOTER */
 
 footer{
-    text-align:center;
-    padding:60px 0;
-    color:#777;
+text-align:center;
+padding:80px 0;
+color:#777;
 }
 
 /* FLOATING WHATSAPP */
 
 .floating{
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    background:linear-gradient(135deg,#d4af37,#f1d58a);
-    color:#062b1c;
-    padding:15px 30px;
-    border-radius:40px;
-    text-decoration:none;
-    font-weight:500;
+position:fixed;
+bottom:25px;
+right:25px;
+background:linear-gradient(135deg,#d4af37,#f1d58a);
+color:#062b1c;
+padding:15px 30px;
+border-radius:40px;
+text-decoration:none;
+font-weight:500;
 }
 
-/* FADE */
+/* FADE ANIMATION */
 
 .fade{
-    opacity:0;
-    transform:translateY(30px);
-    transition:1s;
+opacity:0;
+transform:translateY(40px);
+transition:1s ease;
 }
 
 .fade.show{
-    opacity:1;
-    transform:translateY(0);
+opacity:1;
+transform:translateY(0);
 }
 
 </style>
@@ -245,15 +234,57 @@ Kashmir Valley<br><span>Naturals</span>
 <section class="products">
 
 <div class="product fade">
+<h2>Kashmiri Saffron (Kesar)</h2>
+<div class="price">₹349 <span class="old">₹399</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Kashmiri Saffron" class="btn">Order Now</a>
+</div>
+
+<div class="product fade">
+<h2>Saffron Oil</h2>
+<div class="price">₹799 <span class="old">₹999</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Saffron Oil" class="btn">Order Now</a>
+</div>
+
+<div class="product fade">
 <h2>Walnut (Akhrot)</h2>
 <div class="price">₹2,099 <span class="old">₹2,499</span></div>
 <a href="https://wa.me/916006773054?text=I want to order Walnut" class="btn">Order Now</a>
 </div>
 
 <div class="product fade">
+<h2>Almonds (Badam)</h2>
+<div class="price">₹1,699 <span class="old">₹1,899</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Almonds" class="btn">Order Now</a>
+</div>
+
+<div class="product fade">
+<h2>Almonds With Shell</h2>
+<div class="price">₹799 <span class="old">₹899</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Almonds With Shell" class="btn">Order Now</a>
+</div>
+
+<div class="product fade">
+<h2>Shilajit</h2>
+<div class="price">₹749 <span class="old">₹999</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Shilajit" class="btn">Order Now</a>
+</div>
+
+<div class="product fade">
+<h2>Kehwa</h2>
+<div class="price">₹349 <span class="old">₹399</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Kehwa" class="btn">Order Now</a>
+</div>
+
+<div class="product fade">
 <h2>Honey</h2>
 <div class="price">₹799 <span class="old">₹899</span></div>
 <a href="https://wa.me/916006773054?text=I want to order Honey" class="btn">Order Now</a>
+</div>
+
+<div class="product fade">
+<h2>Kashmiri Delight Gift Hamper</h2>
+<div class="price">₹1,499 <span class="old">₹1,699</span></div>
+<a href="https://wa.me/916006773054?text=I want to order Gift Hamper" class="btn">Order Now</a>
 </div>
 
 </section>
@@ -292,17 +323,16 @@ Kashmir Valley<br><span>Naturals</span>
 
 <a href="https://wa.me/916006773054" class="floating">WhatsApp Us</a>
 
-
 <script>
-const observer = new IntersectionObserver((entries)=>{
+const observer=new IntersectionObserver((entries)=>{
 entries.forEach(entry=>{
 if(entry.isIntersecting){
-entry.target.classList.add('show');
+entry.target.classList.add("show");
 }
 });
 },{threshold:0.2});
 
-document.querySelectorAll('.fade').forEach(el=>{
+document.querySelectorAll(".fade").forEach(el=>{
 observer.observe(el);
 });
 </script>
