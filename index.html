@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-
 body{
 margin:0;
 background:#052c1a;
@@ -29,15 +28,12 @@ align-items:center;
 z-index:9999;
 transition:opacity 1s ease;
 }
-
 .loader-text{
 font-family:'Playfair Display',serif;
 font-size:28px;
 color:#d4af37;
-letter-spacing:2px;
 animation:pulse 1.5s infinite alternate;
 }
-
 @keyframes pulse{
 from{opacity:0.4;}
 to{opacity:1;}
@@ -56,10 +52,8 @@ backdrop-filter:blur(8px);
 border-bottom:1px solid rgba(255,255,255,0.1);
 z-index:1000;
 }
-
 .logo span{color:#d4af37;}
 .est{font-size:11px;color:#d4af37;letter-spacing:2px;}
-
 nav a{
 margin-left:25px;
 text-decoration:none;
@@ -95,7 +89,6 @@ transition:all 0.4s ease;
 box-shadow:0 0 25px rgba(212,175,55,0.3);
 transform:translateY(-6px);
 }
-
 .badge{
 background:#d4af37;
 color:#000;
@@ -104,11 +97,9 @@ font-size:12px;
 display:inline-block;
 margin-bottom:10px;
 }
-
 .price{margin:15px 0;}
 .price .new{color:#d4af37;font-size:24px;margin-right:10px;}
 .price .old{text-decoration:line-through;opacity:0.5;}
-
 .stock{color:#ff6b6b;}
 .timer{color:#d4af37;margin-bottom:10px;}
 
@@ -168,7 +159,6 @@ text-decoration:none;
 box-shadow:0 0 25px rgba(212,175,55,0.6);
 animation:glow 2s infinite alternate;
 }
-
 @keyframes glow{
 from{box-shadow:0 0 10px #d4af37;}
 to{box-shadow:0 0 30px #d4af37;}
@@ -184,7 +174,6 @@ transition:all 1s ease;
 opacity:1;
 transform:translateY(0);
 }
-
 </style>
 </head>
 
@@ -235,13 +224,33 @@ transform:translateY(0);
 </div>
 <a href="https://wa.me/916006773054?text=I want to order Saffron Oil" class="btn">Order Now</a>
 </div>
+</section>
 
+<section class="category reveal">
+<h2>Premium Dry Fruits</h2>
+
+<div class="product"><h3>Walnut (Akhrot)</h3><div class="price"><span class="new">₹2,099</span><span class="old">₹2,499</span></div><a href="https://wa.me/916006773054?text=I want to order Walnut" class="btn">Order Now</a></div>
+
+<div class="product"><h3>Almonds (Badam)</h3><div class="price"><span class="new">₹1,699</span><span class="old">₹1,899</span></div><a href="https://wa.me/916006773054?text=I want to order Almonds" class="btn">Order Now</a></div>
+
+<div class="product"><h3>Almonds With Shell</h3><div class="price"><span class="new">₹799</span><span class="old">₹899</span></div><a href="https://wa.me/916006773054?text=I want to order Almonds With Shell" class="btn">Order Now</a></div>
+</section>
+
+<section class="category reveal">
+<h2>Wellness & Essentials</h2>
+
+<div class="product"><h3>Shilajit</h3><div class="price"><span class="new">₹749</span><span class="old">₹999</span></div><a href="https://wa.me/916006773054?text=I want to order Shilajit" class="btn">Order Now</a></div>
+
+<div class="product"><h3>Kehwa</h3><div class="price"><span class="new">₹349</span><span class="old">₹399</span></div><a href="https://wa.me/916006773054?text=I want to order Kehwa" class="btn">Order Now</a></div>
+
+<div class="product"><h3>Honey</h3><div class="price"><span class="new">₹799</span><span class="old">₹899</span></div><a href="https://wa.me/916006773054?text=I want to order Honey" class="btn">Order Now</a></div>
+
+<div class="product"><h3>Kashmiri Delight Gift Hamper</h3><div class="price"><span class="new">₹1,499</span><span class="old">₹1,699</span></div><a href="https://wa.me/916006773054?text=I want to order Gift Hamper" class="btn">Order Now</a></div>
 </section>
 
 <section class="testimonials reveal">
 <h2>Customer Reviews</h2>
 <div class="slider" id="testimonial-slider">
-
 <div class="review">★★★★★<p>"Premium quality saffron. Truly authentic."</p><span>— Aarav, Delhi</span></div>
 <div class="review">★★★★★<p>"Excellent packaging and fast delivery."</p><span>— Zoya, Mumbai</span></div>
 <div class="review">★★★★★<p>"Best dry fruits I’ve ordered online."</p><span>— Imran, Hyderabad</span></div>
@@ -252,7 +261,6 @@ transform:translateY(0);
 <div class="review">★★★★★<p>"Highly recommended for saffron."</p><span>— Priya, Mumbai</span></div>
 <div class="review">★★★★★<p>"Fast delivery and premium packaging."</p><span>— Sameer, Delhi</span></div>
 <div class="review">★★★★★<p>"Will definitely order again."</p><span>— Zain, Lucknow</span></div>
-
 </div>
 </section>
 
@@ -263,21 +271,18 @@ transform:translateY(0);
 </section>
 
 <footer>
-© 2025 Kashmir Valley Naturals
+© 2026 Kashmir Valley Naturals
 </footer>
 
 <a href="https://wa.me/916006773054" class="floating-wa">WhatsApp Us</a>
 
 <script>
-
-// PRELOADER
 window.addEventListener("load",()=>{
 const loader=document.getElementById("preloader");
 loader.style.opacity="0";
 setTimeout(()=>{loader.style.display="none";},1000);
 });
 
-// SCROLL REVEAL
 window.addEventListener('scroll',()=>{
 document.querySelectorAll('.reveal').forEach(el=>{
 if(el.getBoundingClientRect().top < window.innerHeight-100){
@@ -286,7 +291,6 @@ el.classList.add('active');
 });
 });
 
-// STOCK COUNTER
 let stock=7;
 setInterval(()=>{
 if(stock>3){
@@ -295,7 +299,6 @@ document.getElementById("stock-count").innerText=stock;
 }
 },8000);
 
-// COUNTDOWN
 let time=3600;
 setInterval(()=>{
 let m=Math.floor(time/60);
@@ -304,14 +307,12 @@ document.getElementById("countdown").innerText=m+"m "+s+"s";
 time--;
 },1000);
 
-// TESTIMONIAL SLIDER
 let index=0;
 const slider=document.getElementById("testimonial-slider");
 setInterval(()=>{
 index=(index+1)%10;
 slider.style.transform="translateX(-"+index*100+"%)";
 },4000);
-
 </script>
 
 </body>
