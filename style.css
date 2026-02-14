@@ -1,35 +1,44 @@
+/* GLOBAL */
 body {
   margin: 0;
-  background: #0f1c16;
+  background: radial-gradient(circle at top, #16261f, #0f1c16 60%);
   color: #f5f1e8;
   font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* NAVBAR */
+/* PREMIUM STICKY NAVBAR */
 .navbar {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(12px);
+  background: rgba(15, 28, 22, 0.6);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 40px;
+  padding: 20px 50px;
   border-bottom: 1px solid rgba(255,255,255,0.08);
+  z-index: 999;
 }
 
 .logo {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  letter-spacing: 2px;
+  font-size: 22px;
+  letter-spacing: 3px;
 }
 
 .logo span {
-  color: #c6a85b;
+  background: linear-gradient(45deg, #c6a85b, #f5e3a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-links a {
-  margin-left: 25px;
+  margin-left: 30px;
   text-decoration: none;
   color: #f5f1e8;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 13px;
+  letter-spacing: 2px;
   transition: 0.3s;
 }
 
@@ -37,50 +46,53 @@ body {
   color: #c6a85b;
 }
 
-/* HERO */
+/* HERO — BIGGER & CLEANER */
 .hero {
   text-align: center;
-  padding: 120px 20px 80px;
+  padding: 160px 20px 120px;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  line-height: 1.2;
-}
-
-.hero p {
-  margin-top: 20px;
-  color: #c6a85b;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
   letter-spacing: 1px;
 }
 
-.limited {
-  margin-top: 20px;
-  font-size: 13px;
-  letter-spacing: 2px;
+.hero p {
+  margin-top: 25px;
   color: #c6a85b;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.limited {
+  margin-top: 25px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  opacity: 0.8;
 }
 
 /* PRODUCTS */
 .products {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
-  padding: 40px 20px 80px;
+  padding: 60px 20px 100px;
 }
 
 .product {
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  padding: 40px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  padding: 50px 0;
   opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 0.8s ease forwards;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
 }
 
 .product:hover {
-  background: rgba(255,255,255,0.03);
-  padding-left: 10px;
-  transition: 0.3s;
+  background: rgba(255,255,255,0.02);
+  padding-left: 15px;
+  transition: 0.4s;
 }
 
 .product:nth-child(1){animation-delay:0.1s;}
@@ -94,49 +106,58 @@ body {
 .product:nth-child(9){animation-delay:0.9s;}
 
 @keyframes fadeUp {
-  to { opacity:1; transform:translateY(0); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .product h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
+  font-size: 26px;
+  margin-bottom: 12px;
 }
 
 .new {
-  font-size: 20px;
-  color: #c6a85b;
+  font-size: 22px;
+  background: linear-gradient(45deg, #c6a85b, #f5e3a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-right: 15px;
 }
 
 .old {
   text-decoration: line-through;
-  color: #888;
+  color: #777;
 }
 
+/* BUTTON */
 .btn {
   display: inline-block;
-  padding: 10px 22px;
+  padding: 12px 26px;
   border: 1px solid #c6a85b;
   color: #c6a85b;
   text-decoration: none;
-  transition: 0.3s;
-  font-size: 14px;
-  letter-spacing: 1px;
+  transition: 0.4s;
+  font-size: 13px;
+  letter-spacing: 2px;
 }
 
 .btn:hover {
-  background: #c6a85b;
+  background: linear-gradient(45deg, #c6a85b, #f5e3a1);
   color: #0f1c16;
 }
 
 /* INSTAGRAM */
 .instagram {
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
 .instagram h2 {
   font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 /* FLOATING WHATSAPP */
@@ -144,22 +165,24 @@ body {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background: #c6a85b;
+  background: linear-gradient(45deg, #c6a85b, #f5e3a1);
   color: #0f1c16;
-  padding: 12px 20px;
+  padding: 14px 24px;
   text-decoration: none;
-  font-size: 14px;
-  border-radius: 30px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-  transition: 0.3s;
+  font-size: 13px;
+  border-radius: 40px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  transition: 0.4s;
 }
 
 .floating-wa:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }
 
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 40px;
-  color: #777;
+  padding: 60px;
+  color: #666;
+  font-size: 13px;
 }
