@@ -90,3 +90,35 @@ footer {
   font-size: 14px;
   color: #777;
 }
+.page-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.page-section h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.page-section p {
+  line-height: 1.8;
+  color: #cfcfcf;
+  margin-bottom: 20px;
+}
+
+.why-box {
+  margin-bottom: 40px;
+}
+
+.why-box h3 {
+  color: #c6a85b;
+  margin-bottom: 10px;
+}
+
+.instagram {
+  text-align: center;
+  padding: 80px 20px;
+}
