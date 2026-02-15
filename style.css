@@ -558,192 +558,49 @@ footer {
     opacity:1;
     transform:translateY(0);
 }
-
-
-.mobile-menu a {
-  text-decoration: none !important;
-  color: #f5f2e9 !important;
-  font-size: 20px;
-  display: block;
-  margin: 18px 0;
-  transition: 0.3s ease;
-}
-
-.mobile-menu a:hover {
-  color: #d4af37 !important;
-}
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  font-size: 26px;
-  cursor: pointer;
-  color: #f5f2e9;
-}
-
-.mobile-menu {
-  background: #062e1c;
-}
-/* =========================
-   MOBILE MENU STYLING
-========================= */
-
-.mobile-menu{
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 80%;
-  height: 100%;
-  background: #052c1a;
-  display: flex;
-  flex-direction: column;
-  padding: 80px 30px;
-  transition: 0.4s ease;
-  z-index: 2000;
-}
-
-.mobile-menu.active{
-  right: 0;
-}
-
-.mobile-menu a{
-  text-decoration: none;
-  color: #f5f2e9;
-  font-size: 20px;
-  margin: 15px 0;
-  transition: 0.3s;
-  font-family: 'Playfair Display', serif;
-}
-
-.mobile-menu a:hover{
-  color: #d4af37;
-}
-
-.close-btn{
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-size: 28px;
-  cursor: pointer;
-  color: #d4af37;
-}
-
-.menu-icon{
-  font-size: 26px;
-  cursor: pointer;
-  color: #f5f2e9;
-}
-
-/* Hide normal nav on mobile */
-@media(max-width: 900px){
-  nav{
-    display: none;
-  }
-}
-/* ==============================
-   CLEAN MOBILE MENU
-============================== */
-
-.menu-icon{
-  font-size: 26px;
-  cursor: pointer;
-  color: #f5f2e9;
-}
-
-/* Hide normal nav on mobile */
-@media(max-width: 900px){
-  nav{
-    display: none;
-  }
-}
-
-.mobile-menu{
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 80%;
-  height: 100vh;
-  background: #052c1a;
-  display: flex;
-  flex-direction: column;
-  padding: 80px 30px;
-  transition: 0.4s ease;
-  z-index: 3000;
-}
-
-.mobile-menu.active{
-  right: 0;
-}
-
-.mobile-menu a{
-  text-decoration: none;
-  color: #f5f2e9;
-  font-size: 20px;
-  margin: 18px 0;
-  font-family: 'Playfair Display', serif;
-}
-
-.mobile-menu a:hover{
-  color: #d4af37;
-}
-
-.close-btn{
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-size: 28px;
-  cursor: pointer;
-  color: #d4af37;
-}
-#menu-toggle:checked ~ .mobile-menu {
-    right: 0;
-}
-/* =========================
-   CLEAN CSS ONLY MOBILE MENU
-========================= */
-
-/* Hide normal nav on mobile */
-@media (max-width: 900px){
-  nav{
-    display: none;
-  }
-}
-
-/* Menu icon */
-.menu-icon{
-  font-size: 26px;
-  cursor: pointer;
-  color: #f5f2e9;
-}
+/* ===== CLEAN CSS ONLY MOBILE MENU ===== */
 
 /* Hide checkbox */
-#menu-toggle{
+#menu-toggle {
   display: none;
 }
 
-/* Mobile menu base */
-.mobile-menu{
+/* Menu icon */
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+  color: #f5f2e9;
+}
+
+/* Hide normal nav on mobile */
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+}
+
+/* Mobile menu panel */
+.mobile-menu {
   position: fixed;
   top: 0;
   right: -100%;
   width: 80%;
   height: 100vh;
   background: #052c1a;
+  padding: 80px 30px;
   display: flex;
   flex-direction: column;
-  padding: 80px 30px;
-  transition: 0.4s ease;
+  transition: right 0.4s ease;
   z-index: 5000;
 }
 
-/* Slide when checked */
-#menu-toggle:checked ~ .mobile-menu{
+/* Slide in when checked */
+#menu-toggle:checked ~ .mobile-menu {
   right: 0;
 }
 
-/* Links */
-.mobile-menu a{
+/* Menu links */
+.mobile-menu a {
   text-decoration: none;
   color: #f5f2e9;
   font-size: 20px;
@@ -751,12 +608,12 @@ footer {
   font-family: 'Playfair Display', serif;
 }
 
-.mobile-menu a:hover{
+.mobile-menu a:hover {
   color: #d4af37;
 }
 
 /* Close button */
-.close-btn{
+.close-btn {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -764,3 +621,4 @@ footer {
   cursor: pointer;
   color: #d4af37;
 }
+
