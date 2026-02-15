@@ -699,3 +699,36 @@ footer {
 #menu-toggle:checked ~ .mobile-menu {
     right: 0;
 }
+/* ===== CSS ONLY MOBILE MENU FIX ===== */
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Keep menu hidden by default */
+.mobile-menu {
+    right: -100% !important;
+}
+
+/* Slide in when checked */
+#menu-toggle:checked ~ .mobile-menu {
+    right: 0 !important;
+}
+
+/* Menu icon styling */
+.menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+    color: #f5f2e9;
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #d4af37;
+}
