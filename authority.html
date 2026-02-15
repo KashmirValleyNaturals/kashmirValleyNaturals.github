@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story | Kashmir Valley Naturals</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+background:#052c1a;
+color:#f5f2e9;
+font-family:'Inter',sans-serif;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(5,44,26,0.95);
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.logo span{color:#d4af37;}
+.est{font-size:11px;color:#d4af37;letter-spacing:2px;}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#f5f2e9;
+}
+nav a:hover{color:#d4af37;}
+
+section{
+padding:80px 8%;
+}
+
+h1,h2,h3{
+font-family:'Playfair Display',serif;
+}
+
+.product{
+border:1px solid rgba(255,255,255,0.1);
+padding:30px;
+margin-bottom:30px;
+}
+
+.accordion{
+cursor:pointer;
+padding:15px;
+border:1px solid rgba(255,255,255,0.2);
+margin-bottom:10px;
+}
+
+.panel{
+display:none;
+padding:15px;
+border:1px solid rgba(255,255,255,0.1);
+margin-bottom:10px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+border-top:1px solid rgba(255,255,255,0.1);
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+<div>
+<div class="logo">Kashmir Valley <span>Naturals</span></div>
+<div class="est">EST. 2025</div>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="authority.html">Our Story</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section>
+<h1>Our Story</h1>
+</section>
+
+<section>
+<h2>From The Founder</h2>
+<div class="product">
+<p>
+Kashmir Valley Naturals was founded to deliver authentic Kashmiri products directly from local farmers to your home.
+</p>
+<p>
+We believe in purity, transparency, and preserving the heritage of Kashmir.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Our Harvest Process</h2>
+
+<div class="product">
+<h3>Handpicked in Kashmir</h3>
+<p>Our products are carefully harvested during peak season.</p>
+</div>
+
+<div class="product">
+<h3>Quality Checked</h3>
+<p>Each batch is inspected for aroma, purity and freshness.</p>
+</div>
+
+<div class="product">
+<h3>Premium Sealed Packaging</h3>
+<p>We use secure packaging to preserve quality and freshness.</p>
+</div>
+
+</section>
+
+<section>
+<h2>Authenticity & Trust</h2>
+
+<div class="product">
+<h3>100% Authentic Kashmiri Products</h3>
+<p>Direct sourcing from Kashmir ensures purity.</p>
+</div>
+
+<div class="product">
+<h3>Limited Seasonal Harvest</h3>
+<p>We sell only fresh seasonal batches.</p>
+</div>
+
+</section>
+
+<section>
+<h2>Frequently Asked Questions</h2>
+
+<div class="accordion">Is your saffron authentic?</div>
+<div class="panel">Yes, it is directly sourced from Kashmir.</div>
+
+<div class="accordion">Do you ship across India?</div>
+<div class="panel">Yes, we deliver pan-India securely.</div>
+
+<div class="accordion">How can I place an order?</div>
+<div class="panel">Click Order Now on any product to contact us via WhatsApp.</div>
+
+</section>
+
+<footer>
+© 2025 Kashmir Valley Naturals
+</footer>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+for (var i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var panel = this.nextElementSibling;
+if (panel.style.display === "block") {
+panel.style.display = "none";
+} else {
+panel.style.display = "block";
+}
+});
+}
+</script>
+
+</body>
+</html>
