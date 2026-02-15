@@ -699,36 +699,68 @@ footer {
 #menu-toggle:checked ~ .mobile-menu {
     right: 0;
 }
-/* ===== CSS ONLY MOBILE MENU FIX ===== */
+/* =========================
+   CLEAN CSS ONLY MOBILE MENU
+========================= */
+
+/* Hide normal nav on mobile */
+@media (max-width: 900px){
+  nav{
+    display: none;
+  }
+}
+
+/* Menu icon */
+.menu-icon{
+  font-size: 26px;
+  cursor: pointer;
+  color: #f5f2e9;
+}
 
 /* Hide checkbox */
-#menu-toggle {
-    display: none;
+#menu-toggle{
+  display: none;
 }
 
-/* Keep menu hidden by default */
-.mobile-menu {
-    right: -100% !important;
+/* Mobile menu base */
+.mobile-menu{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100vh;
+  background: #052c1a;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 30px;
+  transition: 0.4s ease;
+  z-index: 5000;
 }
 
-/* Slide in when checked */
-#menu-toggle:checked ~ .mobile-menu {
-    right: 0 !important;
+/* Slide when checked */
+#menu-toggle:checked ~ .mobile-menu{
+  right: 0;
 }
 
-/* Menu icon styling */
-.menu-icon {
-    font-size: 26px;
-    cursor: pointer;
-    color: #f5f2e9;
+/* Links */
+.mobile-menu a{
+  text-decoration: none;
+  color: #f5f2e9;
+  font-size: 20px;
+  margin: 18px 0;
+  font-family: 'Playfair Display', serif;
 }
 
-/* Close button styling */
-.close-btn {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    font-size: 28px;
-    cursor: pointer;
-    color: #d4af37;
+.mobile-menu a:hover{
+  color: #d4af37;
+}
+
+/* Close button */
+.close-btn{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #d4af37;
 }
