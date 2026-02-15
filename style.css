@@ -720,3 +720,17 @@ nav a:hover {
 nav a:hover::after {
   width: 100%;
 }
+/* ===== ORGANIZED NAVBAR ===== */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px 50px; /* vertical | horizontal spacing */
+  max-width: 700px;
+}
+
+nav a {
+  min-width: 120px;
+  text-align: center;
+}
