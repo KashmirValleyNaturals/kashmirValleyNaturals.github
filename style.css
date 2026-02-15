@@ -696,3 +696,6 @@ footer {
   cursor: pointer;
   color: #d4af37;
 }
+#menu-toggle:checked ~ .mobile-menu {
+    right: 0;
+}
