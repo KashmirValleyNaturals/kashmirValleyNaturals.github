@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kashmiri Almonds With Shell | Kashmir Valley Naturals</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#052d1a;
+color:#f5f2e9;
+}
+
+h1,h2,h3{
+font-family:'Playfair Display',serif;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px 8%;
+background:#052d1a;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.logo span{color:#d4af37;}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#f5f2e9;
+transition:0.3s;
+}
+
+nav a:hover{color:#d4af37;}
+
+.section{
+padding:80px 8%;
+}
+
+.price{
+font-size:32px;
+color:#d4af37;
+margin-top:10px;
+}
+
+.old{
+text-decoration:line-through;
+opacity:0.6;
+margin-left:10px;
+}
+
+.stock{
+color:#ff6b6b;
+margin-top:10px;
+font-weight:500;
+}
+
+.timer{
+color:#d4af37;
+margin-top:5px;
+font-weight:500;
+}
+
+.button{
+display:inline-block;
+margin-top:25px;
+padding:16px 35px;
+background:linear-gradient(135deg,#d4af37,#c6a85b);
+color:#052d1a;
+font-weight:bold;
+text-decoration:none;
+border-radius:40px;
+transition:0.3s;
+}
+
+.button:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px rgba(212,175,55,0.6);
+}
+
+.card{
+background:#083d24;
+padding:25px;
+margin-top:30px;
+border:1px solid rgba(255,255,255,0.1);
+border-radius:12px;
+transition:0.4s;
+}
+
+.card:hover{
+border-color:#d4af37;
+transform:translateY(-6px);
+}
+
+.rating{
+font-size:20px;
+color:#d4af37;
+margin-top:10px;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+<div class="logo">
+Kashmir Valley <span>Naturals</span>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="section reveal">
+<h1>Kashmiri Almonds With Shell (Natural Harvest)</h1>
+
+<div class="price">
+₹599 <span class="old">₹699</span>
+</div>
+
+<div class="stock">
+Only <span id="stock">8</span> Left In Stock
+</div>
+
+<div class="timer">
+Offer Ends In: <span id="countdown"></span>
+</div>
+
+<div class="rating">
+⭐ 4.8 / 5 • Verified Buyers
+</div>
+
+<a href="https://wa.me/916006773054?text=I want Kashmiri Almonds With Shell"
+class="button">Order on WhatsApp</a>
+</section>
+
+<section class="section reveal">
+
+<h2>Benefits</h2>
+
+<div class="card">
+✔ Naturally protected in shell  
+✔ Rich in Vitamin E  
+✔ Supports brain health  
+✔ Long shelf life  
+✔ Fresh cracking experience
+</div>
+
+<div class="card">
+<h3>Source</h3>
+Harvested directly from Kashmir valley orchards.
+Naturally dried without chemical polishing.
+</div>
+
+<div class="card">
+<h3>Quality Indicators</h3>
+✔ Hard intact shell  
+✔ Fresh natural aroma  
+✔ Light cream kernel  
+✔ No artificial processing
+</div>
+
+<div class="card">
+<h3>Who Should Use It</h3>
+✔ Bulk buyers  
+✔ Households  
+✔ Long-term storage users  
+✔ Natural snack lovers
+</div>
+
+<div class="card">
+<h3>Usage</h3>
+Crack open shell before consumption.  
+Consume 5–7 almonds daily.
+</div>
+
+<div class="card">
+<h3>Storage</h3>
+Store in cool dry place.  
+Keep away from moisture.
+</div>
+
+<div class="card">
+<h3>FAQ</h3>
+<strong>Are they fresh harvest?</strong><br>
+Yes, sourced from latest seasonal batch.<br><br>
+
+<strong>Why buy with shell?</strong><br>
+Shell protects freshness and increases shelf life.
+</div>
+
+<a href="https://wa.me/916006773054?text=I want Kashmiri Almonds With Shell"
+class="button">Secure Your Order Now</a>
+
+</section>
+
+<script>
+window.addEventListener('scroll',()=>{
+document.querySelectorAll('.reveal').forEach(el=>{
+if(el.getBoundingClientRect().top < window.innerHeight-100){
+el.classList.add('active');
+}
+});
+});
+
+let stock=8;
+setInterval(()=>{
+if(stock>3){
+stock--;
+document.getElementById("stock").innerText=stock;
+}
+},10000);
+
+let time=3600;
+setInterval(()=>{
+let m=Math.floor(time/60);
+let s=time%60;
+if(s<10){s="0"+s;}
+document.getElementById("countdown").innerText=
+m+"m "+s+"s";
+time--;
+},1000);
+</script>
+
+</body>
+</html>
