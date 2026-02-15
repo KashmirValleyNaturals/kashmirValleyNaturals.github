@@ -514,3 +514,31 @@ footer {
   cursor: pointer;
   border-radius: 30px;
 }
+<style>
+   /* your previous CSS */
+
+   .reveal.active{
+       opacity:1;
+       transform:translateY(0);
+   }
+
+   /* ADD URGENCY CSS HERE AT BOTTOM */
+
+   .urgency-bar{
+       background: linear-gradient(90deg, #d4af37, #f5e2a9, #d4af37);
+       color:#052d1a;
+       text-align:center;
+       padding:10px;
+       font-weight:600;
+       font-size:14px;
+       letter-spacing:1px;
+       background-size:400% 100%;
+       animation:shimmer 3s infinite linear;
+   }
+
+   @keyframes shimmer{
+       0%{background-position:0% 50%;}
+       100%{background-position:100% 50%;}
+   }
+
+</style>
